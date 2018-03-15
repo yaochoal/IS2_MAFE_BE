@@ -1,24 +1,10 @@
-# README
+# PROYECTO MAFE
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Lista de features hechos:
 
-Things you may want to cover:
+* Api, seeds, componentes, asociaciones y validaciones
+* Realizado por: Diego Garcia, Heyner Martinez, Yesid Ochoa
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Vistas de Landing, registro e inicio de sesión
+* Realizado por: Alejandra Bautista, Ivan Gomez, Yesid Ochoa
