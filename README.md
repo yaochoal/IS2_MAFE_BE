@@ -1,6 +1,6 @@
 # PROYECTO MAFE
 
-Lista de features hechos:
+Lista de features desarrollados:
 
 * Api, seeds, componentes, asociaciones y validaciones
 * Realizado por: Diego Garcia, Heyner Martinez, Yesid Ochoa
