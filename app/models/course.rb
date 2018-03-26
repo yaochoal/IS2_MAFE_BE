@@ -5,4 +5,6 @@ class Course < ApplicationRecord
   has_many :teachers, through: :teacher_has_courses
   has_many :course_has_themes
   has_many :themes, through: :course_has_themes
+  validates :name, presence: true, uniqueness: true
+  validates :code, presence: true, uniqueness: true
 end
