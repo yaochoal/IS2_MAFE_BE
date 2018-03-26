@@ -1,4 +1,4 @@
 class CareerHasCourse < ApplicationRecord
-  belongs_to :career, required: false
-  belongs_to :course, required: false
+  belongs_to :career
+  belongs_to :course
 end
