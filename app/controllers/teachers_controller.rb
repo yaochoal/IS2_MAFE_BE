@@ -5,7 +5,6 @@ class TeachersController < ApplicationController
   #http://localhost:3000/teachers?page=1
   def index
     @teachers = Teacher.paginate(:page => params[:page], per_page:6)
-
     render json: @teachers
   end
 
