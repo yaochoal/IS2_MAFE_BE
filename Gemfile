@@ -5,9 +5,9 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 #gema para autenticar
-gem 'devise'
+gem 'devise', git: 'git://github.com/plataformatec/devise.git'
 #gema para que sea solo de google
-gem 'devise_google_authenticator', '0.3.16'
+#gem 'devise_google_authenticator', '0.3.16'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.5'
 # Use sqlite3 as the database for Active Record
