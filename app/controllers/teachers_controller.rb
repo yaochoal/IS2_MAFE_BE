@@ -2,9 +2,9 @@ class TeachersController < ApplicationController
   before_action :set_teacher, only: [:show, :update, :destroy]
 
   # GET /teachers
+  #http://localhost:3000/teachers?page=1
   def index
-    @teachers = Teacher.all
-
+    @teachers = Teacher.paginate(:page => params[:page], per_page:6)
     render json: @teachers
   end
 

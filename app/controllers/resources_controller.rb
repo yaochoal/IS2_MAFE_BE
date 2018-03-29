@@ -2,8 +2,9 @@ class ResourcesController < ApplicationController
   before_action :set_resource, only: [:show, :update, :destroy]
 
   # GET /resources
+  #http://localhost:3000/resources?page=1
   def index
-    @resources = Resource.all
+    @resources = Resource.paginate(:page => params[:page], per_page:6)
 
     render json: @resources
   end
