@@ -127,7 +127,7 @@ end
 end
 
 
-
+"""
 
 500.times do 
     Scorecomment.create([{
@@ -135,3 +135,5 @@ end
         negative: rand(1...250)
         }])
 end
+
+"""
