@@ -65,7 +65,7 @@
 
 Rails.application.routes.draw do
   post 'user_token' => 'user_token#create'
-  devise_for :users
+  devise_for :users 
   resources :scoreresources
   resources :scoreteachers
   resources :scorecomments
@@ -76,5 +76,6 @@ Rails.application.routes.draw do
   resources :courses
   resources :careers
   resources :users
+  resources :register
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
