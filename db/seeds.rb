@@ -7,10 +7,13 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-500.times do 
+50.times do 
+    luna = Faker::Internet.password(8)
 User.create([{
     username: Faker::Name.name,
-    password: Faker::Internet.password(8),
+    password: luna,
+    password_confirmation: luna,
+    password1: luna,
     email:    Faker::Internet.email,
     avatar: Faker::Avatar.image,
     career_id: rand(1...8)
@@ -62,7 +65,7 @@ Career.create([{
 
 
 
-500.times do 
+50.times do 
     Course.create([{
         name: Faker::Educator.course,
         code: Faker::Number.number(6)
@@ -71,7 +74,7 @@ end
 
 
 
-500.times do
+50.times do
     Theme.create([{
         name: Faker::Name.title,
         description: Faker::RickAndMorty.location 
@@ -81,7 +84,7 @@ end
 
 
 
-500.times do
+50.times do
     Resource.create([{
         name: Faker::Name.title,
         link: Faker::Internet.url,
@@ -92,14 +95,14 @@ end
 
 
 
-500.times do
+50.times do
     Scoreresource.create([{
         score: rand(1...5),
         votes: rand(1...500)
     }])
 end
 
-500.times do 
+50.times do 
     Teacher.create([{
         name: Faker::Name.name,
         description: Faker::RickAndMorty.quote,
@@ -109,7 +112,7 @@ end
 
 
 
-500.times do 
+50.times do 
     Scoreteacher.create([{
         score: rand(1...5),
         votes: rand(1...500)
@@ -118,7 +121,7 @@ end
 
 
 
-500.times do 
+50.times do 
     Comment.create([{
         comment: Faker::HitchhikersGuideToTheGalaxy.quote,
         user_id: rand(1...500),
@@ -127,13 +130,57 @@ end
 end
 
 
-"""
 
-500.times do 
+
+50.times do 
     Scorecomment.create([{
         positive: rand(1...250),
         negative: rand(1...250)
         }])
 end
 
-"""
+
+TeacherHasCourse.create([
+		{
+        teacher_id: 1,
+        course_id: 1
+		},
+		{
+        teacher_id: 1,
+        course_id: 2
+		},
+		{
+        teacher_id: 1,
+        course_id: 3
+		},
+		{
+        teacher_id: 1,
+        course_id: 4
+		},
+		{
+        teacher_id: 1,
+        course_id: 5
+		},
+		{
+        teacher_id: 2,
+        course_id: 2
+		},
+		{
+        teacher_id: 2,
+        course_id: 4
+		},
+		{
+        teacher_id: 2,
+        course_id: 1
+		},
+		{
+        teacher_id: 4,
+        course_id: 1
+		},
+		{
+        teacher_id: 5,
+        course_id: 3
+		}
+        ])
+
+
