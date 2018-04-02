@@ -5,5 +5,5 @@ class ApplicationController < ActionController::API
   respond_to :html
   include ActionController::MimeResponds
   include Knock::Authenticable
-  undef_method :current_user
+	undef_method :current_user
 end

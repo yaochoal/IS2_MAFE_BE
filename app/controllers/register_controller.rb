@@ -6,15 +6,11 @@ class RegisterController < ApplicationController
   # POST /users
   def create
     @user = User.new(user_params)
-    respond_to do |format|
-		if @user.save
- 
-        UserMailer.welcome_mail(user).deliver_now
-        render json: @user, status: :created, location: @user 
-		else
-        render json: @user.errors, status: :unprocessable_entity 
-		end
-	  end
+    if @user.save
+      render json: @user, status: :created, location: @user 
+    else
+      render json: @user.errors, status: :unprocessable_entity 
+    end
 end
   def user_params
       params.require(:register).permit(:username ,:email, :password, :password_confirmation, :avatar)
