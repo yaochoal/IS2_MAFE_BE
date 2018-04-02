@@ -27,6 +27,13 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
    alias_method :authenticate, :valid_password?  
+   after_create :send_admin_mail
+   
+   def send_admin_mail
+     UserMailer.welcome_mail(self).deliver_now
+   end
+ 
+
 
    def self.from_taken_payload(payload)
       self.find payload["sub"]
