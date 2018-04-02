@@ -7,19 +7,18 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-50.times do 
-    luna = Faker::Internet.password(8)
-User.create([{
-    username: Faker::Name.name,
-    password: luna,
-    password_confirmation: luna,
-    password1: luna,
-    email:    Faker::Internet.email,
-    avatar: Faker::Avatar.image,
-    career_id: rand(1...8)
-    }])
-
-end
+#50.times do 
+#    luna = Faker::Internet.password(8)
+#User.create([{
+#    username: Faker::Name.name,
+#    password: luna,
+#    password_confirmation: luna,
+#    password1: luna,
+#    email:    Faker::Internet.email,
+#    avatar: Faker::Avatar.image,
+#    career_id: rand(1...8)
+#    }])
+#end
 
 
 Career.create([{
