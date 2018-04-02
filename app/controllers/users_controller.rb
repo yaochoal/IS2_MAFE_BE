@@ -18,7 +18,7 @@ class UsersController < ApplicationController
 
     if @user.save
       #Tell the UserMail to send a welcome email after save
-      #UserMailer.welcome_email(@user).deliver_now
+      UserMailer.welcome_email(@user).deliver_now
       render json: @user, status: :created, location: @user
     else
       render json: @user.errors, status: :unprocessable_entity
