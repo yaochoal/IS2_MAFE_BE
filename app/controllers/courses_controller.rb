@@ -2,9 +2,9 @@ class CoursesController < ApplicationController
   before_action :set_course, only: [:show, :update, :destroy]
 
   # GET /courses
+  #http://localhost:3000/courses?page=1
   def index
-    @courses = Course.all
-
+    @courses = Course.paginate(:page => params[:page], per_page:6)
     render json: @courses
   end
 
