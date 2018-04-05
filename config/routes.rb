@@ -64,6 +64,7 @@
 # 
 
 Rails.application.routes.draw do
+  resources :contacts
   post 'user_token' => 'user_token#create'
   devise_for :users 
   resources :scoreresources
