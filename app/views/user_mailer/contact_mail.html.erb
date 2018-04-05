@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Mensaje de confirmacion</h1>
+    <p>
+    Su mensaje para contactarnos <%= @contact.name %> <%= @contact.lastname %> ha sido recibido con exito<br>
+    </p>
+    <p>
+    Con el siguiente asunto <br>
+    </p>
+    <p>
+    <%= @contact.subject %> <br>
+    </p>
+    <p>
+    <%= @contact.message %> <br>
+    </p>
+    <p>
+      Para entrar al sitio siga el siguiente: <a href="<%= @url %>">link</a>
+    </p>
+    <p>Cualquier inquietud puede contactarnos.</p>
+  </body>
+</html>
