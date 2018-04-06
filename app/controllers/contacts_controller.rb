@@ -14,8 +14,12 @@ class ContactsController < ApplicationController
 
   def create
     @contact = Contact.new(contact_params)
-    @contact.save
-    render json: @contact
+    if @contact.save
+      UserMailer.contact_mail(@contact).deliver_now
+      render json: @contact
+    else
+      render json: @contact.errors, status: :unprocessable_entity
+    end
   end
 
   def update
