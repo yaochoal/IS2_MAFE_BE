@@ -64,6 +64,7 @@
 # 
 
 Rails.application.routes.draw do
+  resources :contacts
   post 'user_token' => 'user_token#create'
   devise_for :users 
   resources :scoreresources
@@ -77,6 +78,5 @@ Rails.application.routes.draw do
   resources :careers
   resources :users
   resources :register
-  resources “contacts”, only: [ :create]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

@@ -1,17 +1,20 @@
 # == Schema Information
 #
-# Table name: careers
+# Table name: contacts
 #
 #  id         :integer          not null, primary key
 #  name       :string
-#  studyplan  :string(255)
+#  lastname   :string
+#  email      :string
+#  subject    :string
+#  message    :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
 
 require 'test_helper'
 
-class CareerTest < ActiveSupport::TestCase
+class ContactTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

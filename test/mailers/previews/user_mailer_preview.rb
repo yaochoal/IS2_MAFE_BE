@@ -6,4 +6,9 @@ class UserMailerPreview < ActionMailer::Preview
     UserMailer.welcome_mail(User.first)
   end
 
+  def contact_mail
+    UserMailer.contact_mail(Contact.first)
+  end
+
+
 end

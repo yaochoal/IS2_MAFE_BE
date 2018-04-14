@@ -1,10 +1,13 @@
 # == Schema Information
 #
-# Table name: careers
+# Table name: contacts
 #
 #  id         :integer          not null, primary key
 #  name       :string
-#  studyplan  :string(255)
+#  lastname   :string
+#  email      :string
+#  subject    :string
+#  message    :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
@@ -13,8 +16,14 @@
 
 one:
   name: MyString
-  studyplan: 1
+  lastname: MyString
+  email: MyString
+  subject: MyString
+  message: MyString
 
 two:
   name: MyString
-  studyplan: 1
+  lastname: MyString
+  email: MyString
+  subject: MyString
+  message: MyString
