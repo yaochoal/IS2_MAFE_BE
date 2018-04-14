@@ -10,6 +10,10 @@ end
 gem 'rails', '~> 5.1.5'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+#gema para pdf
+gem 'wicked_pdf'
+#gema complemento pdf
+gem 'wkhtmltopdf-binary'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 ## Gemfile for Rails 3+, Sinatra, and Merb

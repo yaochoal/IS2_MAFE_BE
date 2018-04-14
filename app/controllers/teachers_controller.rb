@@ -6,6 +6,11 @@ class TeachersController < ApplicationController
   def index
     @teachers = Teacher.paginate(:page => params[:page], per_page:6)
     render json: @teachers
+	respond_to do |format|
+	format.html
+	format.json
+	format.pdf {render template: 'views/teacherspdf', pdf:'Teacherspdf'}
+	end
   end
 
   # GET /teachers/1
@@ -49,3 +54,4 @@ class TeachersController < ApplicationController
       params.require(:teacher).permit(:name, :description)
     end
 end
+
