@@ -9,7 +9,7 @@ class TeachersController < ApplicationController
 	respond_to do |format|
 	format.html
 	format.json
-	format.pdf {render template: 'views/teacherspdf', pdf:'Teacherspdf'}
+	format.pdf {render pdf:'Docentes/Reporte'}
 	end
   end
 
@@ -54,4 +54,3 @@ class TeachersController < ApplicationController
       params.require(:teacher).permit(:name, :description)
     end
 end
-

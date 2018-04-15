@@ -12,7 +12,8 @@ gem 'rails', '~> 5.1.5'
 gem 'sqlite3'
 #gema para pdf
 gem 'wicked_pdf'
-#gema complemento pdf
+gem 'prawn'
+#gema complemento pdf si se usa wicked_pdf
 gem 'wkhtmltopdf-binary'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
