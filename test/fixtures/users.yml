@@ -4,6 +4,7 @@
 #
 #  id                     :integer          not null, primary key
 #  username               :string
+#  password1              :string
 #  avatar                 :string
 #  career_id              :integer
 #  created_at             :datetime         not null
