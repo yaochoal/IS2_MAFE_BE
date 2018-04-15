@@ -10,5 +10,5 @@
 #
 
 class CourseSerializer < ActiveModel::Serializer
-  attributes :id , :name, :code
+  attributes :id , :name ,:code
 end
