@@ -6,17 +6,15 @@ class TeachersController < ApplicationController
   def index
     @teachers = Teacher.paginate(:page => params[:page], per_page:6)
     render json: @teachers
-	respond_to do |format|
-	format.html
-	format.json
-	format.pdf {render pdf:'Docentes/Reporte'}
-	end
   end
 
   # GET /teachers/1
   def show
-    render json: @teacher
-  end
+      respond_to do |format|
+      format.json {render json: @teacher}
+      format.pdf {render pdf: 'Teacher/reporte',pdf:'reporte'}
+    end
+   end
 
   # POST /teachers
   def create
