@@ -10,11 +10,19 @@ class TeachersController < ApplicationController
 
   # GET /teachers/1
   def show
-      respond_to do |format|
-      format.json {render json: @teacher}
-      format.pdf {render pdf: 'Teacher/reporte',pdf:'reporte'}
-    end
-   end
+	@teacher = Teacher.find(params[:id]) 
+    #render json: @teacher#cochino render casi no me dejas hacer pdf's
+	respond_to do |format|
+	format.html
+		format.pdf do
+		pdf = Prawn::Document.new
+		pdf.text "Hello World"
+		send_data pdf.render, filename: "teacher.pdf",
+							  type: "application/pdf",
+							  disposition: "inline"
+		end
+	end
+  end
 
   # POST /teachers
   def create
