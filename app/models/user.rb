@@ -30,13 +30,15 @@ class User < ApplicationRecord
    alias_method :authenticate, :valid_password?  
    after_create :send_admin_mail
    
+  
+
    def send_admin_mail
      UserMailer.welcome_mail(self).deliver_now
    end
    def self.from_taken_payload(payload)
       self.find payload["sub"]
    end
-   validates_format_of :email, :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i
+   #validates_format_of :email, :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i
    has_many :comments
    belongs_to :career, required: false
    validates :password, length: { minimum: 8 }
