@@ -14,5 +14,6 @@ class Theme < ApplicationRecord
   has_many :courses, through: :course_has_themes
   has_many :theme_has_resources
   has_many :resources, through: :theme_has_resources
+  attr_accessor :document_data
   scope :search, ->(params){where(name: params)}
 end
