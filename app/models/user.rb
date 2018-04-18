@@ -30,7 +30,7 @@ class User < ApplicationRecord
    alias_method :authenticate, :valid_password?  
    after_create :send_admin_mail
    
-  
+   mount_uploader :image, AvatarUploader
 
    def send_admin_mail
      UserMailer.welcome_mail(self).deliver_now
@@ -41,7 +41,7 @@ class User < ApplicationRecord
    #validates_format_of :email, :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i
    has_many :comments
    belongs_to :career, required: false
-   validates :password, length: { minimum: 8 }
+   #validates :password, length: { minimum: 8 }
    validates :email, presence: true, uniqueness: true
    #ver comentarios de el id del usuario
    def self.get_idcomments(params)

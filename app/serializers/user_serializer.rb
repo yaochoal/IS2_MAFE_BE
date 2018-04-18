@@ -22,5 +22,6 @@
 #
 
 class UserSerializer < ActiveModel::Serializer
-  attributes :id, :username, :email, :avatar, :career_id, :encrypted_password, :password1
+  attributes :id, :username, :email, :avatar, :career_id, :encrypted_password, :password1, :image
+  
 end

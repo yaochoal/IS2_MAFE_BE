@@ -6,6 +6,7 @@ class SocialsController < ApplicationController
   end
   def show
     user = User.find(params[:id])
+    
     knock_token = Knock::AuthToken.new payload: { sub: user.id }
     render json:  knock_token
   end
