@@ -14,6 +14,7 @@ class Resource < ApplicationRecord
   has_many :theme_has_resources
   has_many :themes, through: :theme_has_resources
   belongs_to  :scoreresource, required: false
+  belongs_to :user
   mount_uploader :link, DocumentUploader
   #ver los temas de apoyo de un recurso id
   def self.get_idthemes(params)

@@ -16,9 +16,10 @@ class ResourcesController < ApplicationController
 
   # POST /resources
   def create
-    @resource = Resource.new(resource_params)
+    @resource = current_user.resource.new(resource_params)
 
     if @resource.save
+      ResourceMailer.new_resource(@resource).deliver_now
       render json: @resource, status: :created, location: @resource
     else
       render json: @resource.errors, status: :unprocessable_entity
