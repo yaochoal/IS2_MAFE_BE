@@ -33,7 +33,7 @@ class User < ApplicationRecord
    mount_base64_uploader :image, AvatarUploader
 
    def send_admin_mail
-     UserMailer.welcome_mail(self).deliver_now
+    # UserMailer.welcome_mail(self).deliver_now
    end
    def self.from_taken_payload(payload)
       self.find payload["sub"]

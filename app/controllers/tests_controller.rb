@@ -1,43 +1,54 @@
 class TestsController < ApplicationController
- # before_action :set_comment, only: [:show, :update, :destroy]
-require "base64"
-  # GET /comments
+  before_action :set_resource, only: [:show, :update, :destroy]
+
+  # GET /resources
+  #http://localhost:3000/resources?page=1
   def index
-    
-    @users = User.all
-    render json: @users 
-   
+    @resources = Resource.paginate(:page => params[:page], per_page:6)
+
+    render json: @resources
   end
 
-  # GET /comments/1
+  # GET /resources/1
   def show
-
-    
+    render json: @resource
   end
 
-  # POST /comments
+  # POST /resources
   def create
-   image = Base64.decode64()
-    @user = User.search(params["email"]);
-     @user.image = params["base64"]
-    render json: @user
-  end
-
-  # PATCH/PUT /comments/1
-  def update
-    
-  end
-
-  # DELETE /comments/1
-  def destroy
+    @resource = Resource.create(name:params[:name],description: params[:description],resource: params[:resource])
    
+    if @resource.save
+      render json: @resource, status: :created, location: @resource
+       ResourceMailer.new_resource(@resource).deliver_now
+    else
+      render json: @resource.errors, status: :unprocessable_entity
+    end
+    @resource.link = "http://localhost:3000"+@resource.resource.url
+    @resource.save
+  end
+
+  # PATCH/PUT /resources/1
+  def update
+      @resource.update(resource: params[:resource],name: params[:name],description:params[:description])
+      @resource.save
+      @resource.link = "http://localhost:3000"+@resource.resource.url
+      @resource.save
+  end
+
+  # DELETE /resources/1
+  def destroy
+    @resource.destroy
   end
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_comment
-      @comment = User.find(params[:id])
+    def set_resource
+      @resource = Resource.find(params[:id])
     end
 
-   
+    # Only allow a trusted parameter "white list" through.
+    def resource_params
+      params.require(:resource).permit(:name, :link,:resource,:description)
+    end
 end

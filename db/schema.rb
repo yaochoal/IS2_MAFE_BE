@@ -129,6 +129,7 @@ ActiveRecord::Schema.define(version: 20180403195056) do
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "password1"
+    t.string "image"
     t.string "avatar"
     t.integer "career_id"
     t.datetime "created_at", null: false

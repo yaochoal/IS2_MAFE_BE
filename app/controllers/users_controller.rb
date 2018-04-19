@@ -29,11 +29,13 @@ end
 
   # PATCH/PUT /users/1
   def update
-    if
+    if(params[:base64])
+      
       @user.image = params[:base64]
       @user.save
-      @user.avatar = "http://localhost:3000"+ @user.image.url
+     @user.avatar = "http://localhost:3000"+ @user.image.thumb.url
       @user.save
+      puts @user.avatar
     else
       if @user.update(user_params)
         render json: @user
