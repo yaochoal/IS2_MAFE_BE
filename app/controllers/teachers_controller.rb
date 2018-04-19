@@ -11,22 +11,17 @@ class TeachersController < ApplicationController
   # GET /teachers/1
   def show
 	teacher = Teacher.find(params[:id]) 
-    #render json: @teacher#cochino render casi no me dejas hacer pdf's
+    #render json: @teacher
 	respond_to do |format|
 	format.html
 		format.pdf do
 		pdf = ReportePdf.new#Prawn::Document.new#
-		#pdf.text Teachers.id.to_s
-		#pdf.text Teacher.name.to_s
-		#pdf.text Teacher.description.to_s
 		send_data pdf.render, filename: "Reporte.pdf",
 							  type: "application/pdf",
 							  disposition: "inline"
 		
 		end
-		
 		end
-	
   end
 
   # POST /teachers
