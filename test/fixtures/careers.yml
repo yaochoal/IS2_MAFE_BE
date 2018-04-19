@@ -1,0 +1,20 @@
+# == Schema Information
+#
+# Table name: careers
+#
+#  id         :integer          not null, primary key
+#  name       :string
+#  studyplan  :string(255)
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  studyplan: 1
+
+two:
+  name: MyString
+  studyplan: 1
