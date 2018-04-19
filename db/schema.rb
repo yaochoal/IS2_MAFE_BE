@@ -66,6 +66,8 @@ ActiveRecord::Schema.define(version: 20180403195056) do
     t.string "name"
     t.string "link"
     t.integer "scoreresource_id"
+    t.string "description"
+    t.string "resource"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -129,7 +131,6 @@ ActiveRecord::Schema.define(version: 20180403195056) do
     t.string "password1"
     t.string "avatar"
     t.integer "career_id"
-    t.string "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "email", default: "", null: false

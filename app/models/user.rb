@@ -30,7 +30,7 @@ class User < ApplicationRecord
    alias_method :authenticate, :valid_password?  
    after_create :send_admin_mail
    
-   mount_uploader :image, AvatarUploader
+   mount_base64_uploader :image, AvatarUploader
 
    def send_admin_mail
      UserMailer.welcome_mail(self).deliver_now

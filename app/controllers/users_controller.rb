@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
-  before_action :authenticate_user, only: [:index,:show, :update, :destroy]
+  
+  #before_action :authenticate_user, only: [:index,:show, :update, :destroy]
   before_action :set_user, only: [:show, :update, :destroy]
 
   # GET /users
@@ -9,7 +10,6 @@ class UsersController < ApplicationController
   end
   # GET /users/1
   def show
-
     render json: @user
   end
 
@@ -29,21 +29,20 @@ end
 
   # PATCH/PUT /users/1
   def update
-    if(params[:image])
-     @user.image = params[:image]
-
-     @user.save
-     else
-    if @user.update(user_params)
-      render json: @user
-
+    if
+      @user.image = params[:base64]
+      @user.save
+      @user.avatar = "http://localhost:3000"+ @user.image.url
+      @user.save
     else
-      render json: @user.errors, status: :unprocessable_entity
+      if @user.update(user_params)
+        render json: @user
+      else
+        render json: @user.errors, status: :unprocessable_entity
+      end
     end
     
-  end
-  @user.avatar = "http://localhost:3000"+ @user.image.url
-    @user.save
+    
   end
 
   # DELETE /users/1

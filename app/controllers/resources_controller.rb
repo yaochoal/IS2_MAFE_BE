@@ -27,6 +27,10 @@ class ResourcesController < ApplicationController
 
   # PATCH/PUT /resources/1
   def update
+    @resource.resource = params[:resource]
+      @resource.save
+      @resource.link = "asdasdasdasd"
+      @resource.save
     if @resource.update(resource_params)
       render json: @resource
     else
