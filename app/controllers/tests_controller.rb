@@ -20,7 +20,7 @@ class TestsController < ApplicationController
    
     if @resource.save
       render json: @resource, status: :created, location: @resource
-       ResourceMailer.new_resource(@resource).deliver_now
+      # ResourceMailer.new_resource(@resource).deliver_now
     else
       render json: @resource.errors, status: :unprocessable_entity
     end
