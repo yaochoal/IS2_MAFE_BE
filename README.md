@@ -12,3 +12,8 @@ Lista de features desarrollados:
 * Subida de archivos "imagen de usuario" usando carrierwave: Yesid Ochoa y Heyner Martinez
 * Envio de archivos al backend "implemendo envio en base64": Yesid Ochoa
 
+* Link back:
+* https://mafe-app-back.herokuapp.com/
+* link front: 
+* https://mafe-app-front.herokuapp.com/
+
