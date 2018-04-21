@@ -13,7 +13,7 @@ Lista de features desarrollados:
 * Envio de archivos al backend "implemendo envio en base64": Yesid Ochoa
 
 * Link back:
-* https://mafe-app-back.herokuapp.com/
+* https://mafe-app-back-1.herokuapp.com/
 * link front: 
-* https://mafe-app-front.herokuapp.com/
+* https://mafe-app-front-1.herokuapp.com/
 
