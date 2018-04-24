@@ -65,6 +65,7 @@ ActiveRecord::Schema.define(version: 20180403195056) do
   create_table "resources", force: :cascade do |t|
     t.string "name"
     t.string "link"
+    t.integer "user_id"
     t.integer "scoreresource_id"
     t.string "description"
     t.string "resource"

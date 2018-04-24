@@ -1,12 +1,12 @@
 class UsersController < ApplicationController
   
-  #before_action :authenticate_user, only: [:index,:show, :update, :destroy]
+  before_action :authenticate_user, only: [:index,:show, :update, :destroy]
   before_action :set_user, only: [:show, :update, :destroy]
 
   # GET /users
   def index
     @users = current_user
-    render json: @users 
+    render json: @users
   end
   # GET /users/1
   def show

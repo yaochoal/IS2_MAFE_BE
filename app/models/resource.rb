@@ -10,12 +10,14 @@
 #  resource         :string
 #  created_at       :datetime         not null
 #  updated_at       :datetime         not null
+#  user_id          :integer
 #
 
 class Resource < ApplicationRecord
   has_many :theme_has_resources
   has_many :themes, through: :theme_has_resources
   belongs_to  :scoreresource, required: false
+  belongs_to :user, required: false
   mount_base64_uploader :resource, PdfsUploader
   #ver los temas de apoyo de un recurso id
   def self.get_idthemes(params)

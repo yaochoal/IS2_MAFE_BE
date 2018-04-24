@@ -5,6 +5,7 @@
 #  id                     :integer          not null, primary key
 #  username               :string
 #  password1              :string
+#  image                  :string
 #  avatar                 :string
 #  career_id              :integer
 #  created_at             :datetime         not null
@@ -23,5 +24,6 @@
 
 class UserSerializer < ActiveModel::Serializer
   attributes :id, :username, :email, :avatar, :career_id, :encrypted_password, :password1, :image
-  
+  has_many :comments
+  has_many :resources
 end
