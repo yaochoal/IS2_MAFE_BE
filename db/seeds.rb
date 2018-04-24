@@ -87,6 +87,10 @@ end
     Resource.create([{
         name: Faker::Name.title,
         link: Faker::Internet.url,
+<<<<<<< HEAD
+=======
+        description: Faker::RickAndMorty.quote,
+>>>>>>> SPRINT_REVISION_3
         scoreresource_id: rand(1...500)
     }])
 end

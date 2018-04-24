@@ -10,5 +10,10 @@
 #
 
 class CourseSerializer < ActiveModel::Serializer
+<<<<<<< HEAD
   attributes :id , :name, :code
 end
+=======
+  attributes :id , :name ,:code
+end
+>>>>>>> SPRINT_REVISION_3

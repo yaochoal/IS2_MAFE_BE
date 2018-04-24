@@ -6,6 +6,11 @@
 #  name             :string
 #  link             :string
 #  scoreresource_id :integer
+<<<<<<< HEAD
+=======
+#  description      :string
+#  resource         :string
+>>>>>>> SPRINT_REVISION_3
 #  created_at       :datetime         not null
 #  updated_at       :datetime         not null
 #

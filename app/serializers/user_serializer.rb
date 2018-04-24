@@ -22,5 +22,10 @@
 #
 
 class UserSerializer < ActiveModel::Serializer
+<<<<<<< HEAD
   attributes :id, :username, :email, :avatar, :career_id, :encrypted_password, :password1
+=======
+  attributes :id, :username, :email, :avatar, :career_id, :encrypted_password, :password1, :image
+  
+>>>>>>> SPRINT_REVISION_3
 end

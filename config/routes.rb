@@ -65,6 +65,13 @@
 
 Rails.application.routes.draw do
   resources :contacts
+<<<<<<< HEAD
+=======
+  resources :socials
+  resources :tests
+  resources :resourcespdfs
+  resources :teacherspdfs
+>>>>>>> SPRINT_REVISION_3
   post 'user_token' => 'user_token#create'
   devise_for :users 
   resources :scoreresources

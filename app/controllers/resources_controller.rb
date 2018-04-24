@@ -16,10 +16,17 @@ class ResourcesController < ApplicationController
 
   # POST /resources
   def create
+<<<<<<< HEAD
     @resource = current_user.resource.new(resource_params)
 
     if @resource.save
       ResourceMailer.new_resource(@resource).deliver_now
+=======
+    @resource = Resource.create(resource_params)
+
+    if @resource.save
+    #	ResourceMailer.new_resource(@resource).deliver_now
+>>>>>>> SPRINT_REVISION_3
       render json: @resource, status: :created, location: @resource
     else
       render json: @resource.errors, status: :unprocessable_entity
@@ -28,10 +35,24 @@ class ResourcesController < ApplicationController
 
   # PATCH/PUT /resources/1
   def update
+<<<<<<< HEAD
     if @resource.update(resource_params)
       render json: @resource
     else
       render json: @resource.errors, status: :unprocessable_entity
+=======
+    if(params[:resource])
+    @resource.resource = params[:resource]
+      @resource.save
+      @resource.link = "http://localhost:3000"+@resource.resource.url
+      @resource.save
+    else
+       if @resource.update(resource_params)
+         render json: @resource
+      else
+         render json: @resource.errors, status: :unprocessable_entity
+      end
+>>>>>>> SPRINT_REVISION_3
     end
   end
 
@@ -48,6 +69,10 @@ class ResourcesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def resource_params
+<<<<<<< HEAD
       params.require(:resource).permit(:name, :link)
+=======
+      params.require(:resource).permit(:name, :link,:resource,:description)
+>>>>>>> SPRINT_REVISION_3
     end
 end

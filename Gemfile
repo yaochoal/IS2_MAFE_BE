@@ -4,8 +4,13 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
-
-
+gem 'prawn'
+gem 'wkhtmltopdf-binary'
+gem 'carrierwave-base64'
+gem "carrierwave-mongoid"
+gem 'mini_magick'
+gem 'httparty'
+gem 'carrierwave', '~> 1.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.5'
 # Use sqlite3 as the database for Active Record
@@ -18,8 +23,11 @@ gem 'knock'
 gem 'active_model_serializers', '~> 0.10.0'
 #gem 'bcrypt', platforms: :ruby
 gem 'devise'
+<<<<<<< HEAD
 
 gem 'carrierwave', '~> 1.0'
+=======
+>>>>>>> SPRINT_REVISION_3
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
