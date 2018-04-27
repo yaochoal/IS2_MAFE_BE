@@ -39,9 +39,21 @@ class User < ApplicationRecord
    def self.from_taken_payload(payload)
       self.find payload["sub"]
    end
+
+   #asosiacion de usuario con comentarios 
+   has_many :comment_courses
+   has_many :comment_resources
+   has_many :comment_teachers
+   has_many :score_comment_teachers
+   has_many :score_comment_resources
+   has_many :score_comment_courses
+
    #validates_format_of :email, :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i
+   #asosiacion de usuario a sus comentarios
    has_many :comments
+   #asosiacion de usuario a sus recursos
    has_many :resources
+   #asosiacion de usuario a su carrera
    belongs_to :career, required: false
    #validates :password, length: { minimum: 8 }
    validates :email, presence: true, uniqueness: true

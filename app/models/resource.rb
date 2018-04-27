@@ -5,27 +5,26 @@
 #  id               :integer          not null, primary key
 #  name             :string
 #  link             :string
+#  user_id          :integer
 #  scoreresource_id :integer
 #  description      :string
 #  resource         :string
 #  created_at       :datetime         not null
 #  updated_at       :datetime         not null
-#  user_id          :integer
 #
 
 class Resource < ApplicationRecord
-  has_many :theme_has_resources
-  has_many :themes, through: :theme_has_resources
-  belongs_to  :scoreresource, required: false
+  #asosiacion de profesores a recurso
+  has_many :teacher_has_resources
+  has_many :teachers, through: :teacher_has_resources
+  #asosiacion de recursos a materias
+  has_many :courses_has_resources
+  has_many :courses, through: :courses_has_resources
+  #asosiacion de recursos a usuario
   belongs_to :user, required: false
+  #asosiacion de recurso con comentarios 
+  has_many :comment_resources
   mount_base64_uploader :resource, PdfsUploader
-  #ver los temas de apoyo de un recurso id
-  def self.get_idthemes(params)
-   		self.joins(:themes).select('resources.id,resources.name as resource_name, themes.id as teacher_id, themes.name as theme_name').where(id: params)
-  end
-  #ver todos los recursos y sus temas de apoyo
-  def self.get_allthemes
-   		self.joins(:themes).select('resources.id ,resources.name as resource_name,themes.id as teacher_id, themes.name as theme_name')
-  end
+ 
   scope :search, ->(params){where(name: params)}
 end

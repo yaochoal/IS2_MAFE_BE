@@ -26,4 +26,10 @@ class UserSerializer < ActiveModel::Serializer
   attributes :id, :username, :email, :avatar, :career_id, :encrypted_password, :password1, :image
   has_many :comments
   has_many :resources
+  has_many :comment_courses
+  has_many :comment_teachers
+  has_many :comment_resources
+  has_many :score_comment_courses
+  has_many :score_comment_teachers
+  has_many :score_comment_resources
 end
