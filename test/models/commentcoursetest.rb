@@ -12,7 +12,7 @@
 
 require 'test_helper'
 
-class CommentCourseTest < ActiveSupport::TestCase
+class CommentcourseTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

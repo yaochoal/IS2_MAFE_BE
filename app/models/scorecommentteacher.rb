@@ -1,17 +1,17 @@
 # == Schema Information
 #
-# Table name: score_comment_courses
+# Table name: scorecommentteachers
 #
 #  id                :integer          not null, primary key
 #  user_id           :integer
-#  comment_course_id :integer
+#  commentteacher_id :integer
 #  negative          :integer
 #  positive          :integer
 #  created_at        :datetime         not null
 #  updated_at        :datetime         not null
 #
 
-class ScoreCommentCourse < ApplicationRecord
+class Scorecommentteacher < ApplicationRecord
 	belongs_to :user, required: false
-	belongs_to :comment_course, required: false
+	belongs_to :commentteacher, required: false
 end

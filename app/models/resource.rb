@@ -23,7 +23,7 @@ class Resource < ApplicationRecord
   #asosiacion de recursos a usuario
   belongs_to :user, required: false
   #asosiacion de recurso con comentarios 
-  has_many :comment_resources
+  has_many :commentresources
   mount_base64_uploader :resource, PdfsUploader
  
   scope :search, ->(params){where(name: params)}

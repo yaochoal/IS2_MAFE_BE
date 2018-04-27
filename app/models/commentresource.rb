@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: comment_resources
+# Table name: commentresources
 #
 #  id          :integer          not null, primary key
 #  user_id     :integer
@@ -10,8 +10,8 @@
 #  updated_at  :datetime         not null
 #
 
-class CommentResource < ApplicationRecord
+class Commentresource < ApplicationRecord
   belongs_to :user, required: false
   belongs_to :resource, required: false
-  has_many :score_comment_resources
+  has_many :scorecommentresources
 end

@@ -11,7 +11,10 @@
 #  updated_at          :datetime         not null
 #
 
-class ScoreCommentResource < ApplicationRecord
-	belongs_to :user, required: false
-	belongs_to :comment_resource, required: false
+require 'test_helper'
+
+class ScorecommentresourceTest < ActiveSupport::TestCase
+  # test "the truth" do
+  #   assert true
+  # end
 end

@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: comment_courses
+# Table name: commentcourses
 #
 #  id         :integer          not null, primary key
 #  user_id    :integer
@@ -10,7 +10,9 @@
 #  updated_at :datetime         not null
 #
 
-class CommentCourseSerializer < ActiveModel::Serializer
-	attributes :id,:comment,:user_id,:course_id
-	has_many :score_comment_courses
+class Commentcourse < ApplicationRecord
+  belongs_to :user, required: false
+  belongs_to :course, required: false
+  has_many :scorecommentcourses
+  
 end

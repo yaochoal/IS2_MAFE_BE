@@ -13,7 +13,7 @@
 
 require 'test_helper'
 
-class ScoreCommentCourseTest < ActiveSupport::TestCase
+class ScorecommentcourseTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

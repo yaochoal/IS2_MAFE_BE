@@ -1,6 +1,6 @@
-class CreateCommentResources < ActiveRecord::Migration[5.1]
+class CreateCommentresources < ActiveRecord::Migration[5.1]
   def change
-    create_table :comment_resources do |t|
+    create_table :commentresources do |t|
       t.integer :user_id
       t.integer :resource_id
       t.string :comment

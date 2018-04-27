@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: comment_resources
+# Table name: commentresources
 #
 #  id          :integer          not null, primary key
 #  user_id     :integer
@@ -10,7 +10,7 @@
 #  updated_at  :datetime         not null
 #
 
-class CommentResourceSerializer < ActiveModel::Serializer
-	attributes :id,:comment, :user_id, :resource_id
-	has_many :score_comment_resources
+class CommentresourceSerializer < ActiveModel::Serializer
+	attributes :id,:comment, :user_id, :resource_id,:scorecommentresources
+
 end

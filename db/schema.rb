@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 20180426222006) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "comment_courses", force: :cascade do |t|
+  create_table "commentcourses", force: :cascade do |t|
     t.integer "user_id"
     t.integer "course_id"
     t.string "comment"
@@ -36,17 +36,9 @@ ActiveRecord::Schema.define(version: 20180426222006) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "comment_resources", force: :cascade do |t|
+  create_table "commentresources", force: :cascade do |t|
     t.integer "user_id"
     t.integer "resource_id"
-    t.string "comment"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "comment_teachers", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "teacher_id"
     t.string "comment"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -56,6 +48,14 @@ ActiveRecord::Schema.define(version: 20180426222006) do
     t.string "comment"
     t.integer "user_id"
     t.integer "scorecomment_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "commentteachers", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "teacher_id"
+    t.string "comment"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -97,27 +97,27 @@ ActiveRecord::Schema.define(version: 20180426222006) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "score_comment_courses", force: :cascade do |t|
+  create_table "scorecommentcourses", force: :cascade do |t|
     t.integer "user_id"
-    t.integer "comment_course_id"
+    t.integer "commentcourse_id"
     t.integer "negative"
     t.integer "positive"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "score_comment_resources", force: :cascade do |t|
+  create_table "scorecommentresources", force: :cascade do |t|
     t.integer "user_id"
-    t.integer "comment_resource_id"
+    t.integer "commentresource_id"
     t.integer "negative"
     t.integer "positive"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "score_comment_teachers", force: :cascade do |t|
+  create_table "scorecommentteachers", force: :cascade do |t|
     t.integer "user_id"
-    t.integer "comment_teacher_id"
+    t.integer "commentteacher_id"
     t.integer "negative"
     t.integer "positive"
     t.datetime "created_at", null: false

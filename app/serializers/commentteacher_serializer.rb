@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: comment_teachers
+# Table name: commentteachers
 #
 #  id         :integer          not null, primary key
 #  user_id    :integer
@@ -10,10 +10,6 @@
 #  updated_at :datetime         not null
 #
 
-require 'test_helper'
-
-class CommentTeacherTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+class CommentteacherSerializer < ActiveModel::Serializer
+	attributes :id,:user_id, :teacher_id,:comment,:scorecommentteachers
 end

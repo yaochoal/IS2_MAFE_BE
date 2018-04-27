@@ -10,7 +10,10 @@
 #  updated_at :datetime         not null
 #
 
-class CommentTeacherSerializer < ActiveModel::Serializer
-	attributes :id,:user_id, :teacher_id,:comment
-	has_many :score_comment_teachers
+require 'test_helper'
+
+class CommentteacherTest < ActiveSupport::TestCase
+  # test "the truth" do
+  #   assert true
+  # end
 end

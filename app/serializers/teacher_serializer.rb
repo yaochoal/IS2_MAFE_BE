@@ -12,5 +12,5 @@
 
 class TeacherSerializer < ActiveModel::Serializer
   attributes :id, :name, :description, :scoreteacher_id
-  has_many :comment_teachers
+  has_many :commentteachers
 end

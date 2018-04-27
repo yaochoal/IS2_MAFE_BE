@@ -18,7 +18,7 @@ class Teacher < ApplicationRecord
   has_many :teacher_has_resources
   has_many :resources, through: :teacher_has_resources
   #asosiacion de profesores con comentarios 
-  has_many :comment_teachers
+  has_many :commentteachers
   #ver los cursos de apoyo de un profesor id
   def self.get_idcourses(params)
    		self.joins(:courses).select('teachers.id,teachers.name as teacher_name, courses.id as course_id, courses.name as course_name').where(id: params)

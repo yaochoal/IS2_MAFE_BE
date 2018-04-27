@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: comment_resources
+# Table name: commentresources
 #
 #  id          :integer          not null, primary key
 #  user_id     :integer

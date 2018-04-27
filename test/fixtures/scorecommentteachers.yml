@@ -1,10 +1,10 @@
 # == Schema Information
 #
-# Table name: score_comment_courses
+# Table name: scorecommentteachers
 #
 #  id                :integer          not null, primary key
 #  user_id           :integer
-#  comment_course_id :integer
+#  commentteacher_id :integer
 #  negative          :integer
 #  positive          :integer
 #  created_at        :datetime         not null
@@ -15,12 +15,12 @@
 
 one:
   user_id: 1
-  comment_course_id: 1
+  comment_teacher_id: 1
   negative: 1
   positive: 1
 
 two:
   user_id: 1
-  comment_course_id: 1
+  comment_teacher_id: 1
   negative: 1
   positive: 1

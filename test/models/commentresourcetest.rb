@@ -12,7 +12,7 @@
 
 require 'test_helper'
 
-class CommentResourceTest < ActiveSupport::TestCase
+class CommentresourceTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

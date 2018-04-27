@@ -11,5 +11,5 @@
 
 class CourseSerializer < ActiveModel::Serializer
   attributes :id , :name ,:code
-  has_many :comment_courses
+  has_many :commentcourses
 end

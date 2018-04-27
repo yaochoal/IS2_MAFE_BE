@@ -1,6 +1,6 @@
-class CreateCommentTeachers < ActiveRecord::Migration[5.1]
+class CreateCommentteachers < ActiveRecord::Migration[5.1]
   def change
-    create_table :comment_teachers do |t|
+    create_table :commentteachers do |t|
       t.integer :user_id
       t.integer :teacher_id
       t.string :comment

@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: comment_teachers
+# Table name: commentteachers
 #
 #  id         :integer          not null, primary key
 #  user_id    :integer
@@ -10,14 +10,8 @@
 #  updated_at :datetime         not null
 #
 
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-one:
-  user: one
-  teacher: one
-  comment: MyString
-
-two:
-  user: two
-  teacher: two
-  comment: MyString
+class Commentteacher < ApplicationRecord
+  belongs_to :user, required: false
+  belongs_to :teacher, required: false
+  has_many :scorecommentteachers
+end

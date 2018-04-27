@@ -15,5 +15,5 @@
 
 class ResourceSerializer < ActiveModel::Serializer
   attributes :id ,:name ,:link ,:scoreresource_id, :description, :resource, :user_id
-  has_many :comment_resources
+  has_many :commentresources
 end

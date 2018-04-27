@@ -11,7 +11,10 @@
 #  updated_at         :datetime         not null
 #
 
-class ScoreCommentTeacher < ApplicationRecord
-	belongs_to :user, required: false
-	belongs_to :comment_teacher, required: false
+require 'test_helper'
+
+class ScorecommentteacherTest < ActiveSupport::TestCase
+  # test "the truth" do
+  #   assert true
+  # end
 end
