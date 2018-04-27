@@ -49,8 +49,7 @@ class User < ApplicationRecord
    has_many :scorecommentcourses
 
    #validates_format_of :email, :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i
-   #asosiacion de usuario a sus comentarios
-   has_many :comments
+
    #asosiacion de usuario a sus recursos
    has_many :resources
    #asosiacion de usuario a su carrera
