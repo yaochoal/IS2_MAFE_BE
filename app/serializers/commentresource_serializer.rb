@@ -11,6 +11,24 @@
 #
 
 class CommentresourceSerializer < ActiveModel::Serializer
-	attributes :id,:comment, :user_id, :resource_id,:scorecommentresources
+	attributes :id, :comment,:user,:image,:created_at, :likes,:dislikes
 
+	def user
+ 	   User.find(object.user_id).username
+	end
+
+	def image
+		User.find(object.user_id).avatar
+	end
+
+	def fecha
+		object.created_at
+	end
+
+	def likes
+		object.scorecommentresources.where(positive: 1).size
+	end
+	def dislikes
+		object.scorecommentresources.where(negative: 1).size
+	end
 end

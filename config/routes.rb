@@ -65,6 +65,8 @@
 
 Rails.application.routes.draw do
   resources :contacts
+  resources :scores
+  resources :search
   resources :socials
   resources :tests
   resources :resourcespdfs

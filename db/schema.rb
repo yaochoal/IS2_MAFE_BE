@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180426222006) do
+ActiveRecord::Schema.define(version: 20180427225453) do
 
   create_table "career_has_courses", force: :cascade do |t|
     t.integer "career_id"
@@ -120,6 +120,33 @@ ActiveRecord::Schema.define(version: 20180426222006) do
     t.integer "commentteacher_id"
     t.integer "negative"
     t.integer "positive"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "scorecourses", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "course_id"
+    t.integer "positive"
+    t.integer "negative"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "scoreresources", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "resource_id"
+    t.integer "positive"
+    t.integer "negative"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "scoreteachers", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "teacher_id"
+    t.integer "positive"
+    t.integer "negative"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

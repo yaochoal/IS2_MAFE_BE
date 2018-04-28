@@ -21,6 +21,8 @@ class Course < ApplicationRecord
   has_many :resources, through: :courses_has_resources
   #asosiacion de curso con comentarios 
   has_many :commentcourses
+  #asosiacion de curso con sus calificaciones
+  has_many :scorecourses 
   #ver profesores de un curso id
   def self.get_idteachers(params)
    		self.joins(:teachers).select('courses.id,courses.name as course_name, teachers.id as teacher_id, teachers.name as teacher_name').where(id: params)
@@ -37,5 +39,5 @@ class Course < ApplicationRecord
   def self.get_allcareers
    		self.joins(:careers).select('courses.id ,courses.name as course_name,careers.id as teacher_id, careers.name as career_name')
   end
-  scope :search, ->(params){where(name: params)}
+  scope :search, ->(params){where("name LIKE ?",params)}
 end

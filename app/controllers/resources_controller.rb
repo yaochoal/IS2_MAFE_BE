@@ -4,7 +4,7 @@ class ResourcesController < ApplicationController
   # GET /resources
   #http://localhost:3000/resources?page=1
   def index
-    @resources = Resource.paginate(:page => params[:page], per_page:6)
+    @resources = Resource.paginate(:page => params[:page], per_page:6).order(created_at: :desc)
 
     render json: @resources
   end

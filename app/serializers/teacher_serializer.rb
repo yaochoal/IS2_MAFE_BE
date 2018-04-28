@@ -11,6 +11,12 @@
 #
 
 class TeacherSerializer < ActiveModel::Serializer
-  attributes :id, :name, :description, :scoreteacher_id
+  attributes :id, :name, :description, :scoreteacher_id,:likes,:dislikes
   has_many :commentteachers
+  def likes
+		object.scoreteachers.where(positive: 1).size
+  end
+  def dislikes
+		object.scoreteachers.where(negative: 1).size
+  end
 end

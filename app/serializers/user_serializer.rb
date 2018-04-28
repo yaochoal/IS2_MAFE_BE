@@ -24,11 +24,11 @@
 
 class UserSerializer < ActiveModel::Serializer
   attributes :id, :username, :email, :avatar, :career_id, :encrypted_password, :password1, :image
-  has_many :resources
-  has_many :commentcourses
-  has_many :commentteachers
-  has_many :commentresources
-  has_many :scorecommentcourses
-  has_many :scorecommentteachers
-  has_many :scorecommentresources
+  #has_many :resources
+  #has_many :commentcourses
+  #has_many :commentteachers
+  #has_many :commentresources
+  #has_many :scorecommentcourses
+  #has_many :scorecommentteachers
+  #has_many :scorecommentresources
 end

@@ -10,6 +10,13 @@
 #
 
 class CourseSerializer < ActiveModel::Serializer
-  attributes :id , :name ,:code
+  attributes :id , :name ,:code,:likes,:dislikes
   has_many :commentcourses
+
+  def likes
+		object.scorecourses.where(positive: 1).size
+  end
+  def dislikes
+		object.scorecourses.where(negative: 1).size
+  end
 end

@@ -11,5 +11,24 @@
 #
 
 class CommentteacherSerializer < ActiveModel::Serializer
-	attributes :id,:user_id, :teacher_id,:comment,:scorecommentteachers
+	attributes :id, :comment,:user,:image,:created_at, :likes,:dislikes
+	
+	def user
+ 	   User.find(object.user_id).username
+	end
+
+	def image
+		User.find(object.user_id).avatar
+	end
+
+	def fecha
+		object.created_at
+	end
+
+	def likes
+		object.scorecommentteachers.where(positive: 1).size
+	end
+	def dislikes
+		object.scorecommentteachers.where(negative: 1).size
+	end
 end

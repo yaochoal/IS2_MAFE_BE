@@ -12,8 +12,35 @@ class CommentsController < ApplicationController
 
   # POST /comments
   def create
-    user = User.find(params[:user_id])
-    CommentMailer.new_comment(user, @comment).deliver_now
+    if params[:course_id]
+      @comment = Commentcourse.create(user_id: params[:user_id],course_id: params[:course_id],comment: params[:comment])
+      if @comment.save
+      render json: @comment, status: :created
+      else
+      render json: @comment.errors, status: :unprocessable_entity
+      end
+    end
+
+    if params[:teacher_id]
+      @comment = Commentteacher.create(user_id: params[:user_id],teacher_id: params[:teacher_id],comment: params[:comment])
+      if @comment.save
+      render json: @comment, status: :created
+      else
+      render json: @comment.errors, status: :unprocessable_entity
+      end
+    end
+
+    if params[:resource_id]
+      @comment = Commentresource.create(user_id: params[:user_id],resource_id: params[:resource_id],comment: params[:comment])
+      if @comment.save
+      render json: @comment, status: :created
+      else
+      render json: @comment.errors, status: :unprocessable_entity
+      end
+    end
+
+    #user = User.find(params[:user_id])
+    #CommentMailer.new_comment(user, @comment).deliver_now
     
   end
 

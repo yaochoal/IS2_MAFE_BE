@@ -14,6 +14,12 @@
 #
 
 class ResourceSerializer < ActiveModel::Serializer
-  attributes :id ,:name ,:link ,:scoreresource_id, :description, :resource, :user_id
+  attributes :id ,:name ,:link , :description, :resource, :user_id,:likes,:dislikes
   has_many :commentresources
+  def likes
+		object.scoreresources.where(positive: 1).size
+  end
+  def dislikes
+		object.scoreresources.where(negative: 1).size
+  end
 end
