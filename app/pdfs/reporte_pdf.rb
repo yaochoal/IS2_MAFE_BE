@@ -1,8 +1,8 @@
-require "open-uri"
+#require "open-uri"
 class ReportePdf < Prawn::Document
 	def initialize()
 		super()
-		image open("https://image.ibb.co/mRbXsH/logo.png"), :width => 350
+		#image open("https://image.ibb.co/mRbXsH/logo.png"), :width => 350
 		text "        "
 		text "        "
 		text "        "

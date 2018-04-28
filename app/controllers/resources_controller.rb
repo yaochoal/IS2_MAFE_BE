@@ -11,8 +11,20 @@ class ResourcesController < ApplicationController
 
   # GET /resources/1
   def show
-    render json: @resource
+    @resource = Resource.find(params[:id]) 
+    respond_to do |format|
+	format.html
+		format.pdf do
+		pdf = ResourPdf.new#Prawn::Document.new#
+		#pdf.text "hola mundo"
+		send_data pdf.render, filename: "Resourse.pdf",
+							  type: "application/pdf",
+							  disposition: "inline"
+		
+		end
+		end
   end
+  
 
   # POST /resources
   def create
