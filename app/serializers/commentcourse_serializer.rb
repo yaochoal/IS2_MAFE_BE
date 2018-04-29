@@ -11,8 +11,8 @@
 #
 
 class CommentcourseSerializer < ActiveModel::Serializer
-	attributes :id, :comment,:user,:image,:created_at, :likes,:dislikes
-
+	attributes :id,:comment,:user,:image,:date,:likes,:dislikes
+	
 	def user
  	   User.find(object.user_id).username
 	end
@@ -21,7 +21,7 @@ class CommentcourseSerializer < ActiveModel::Serializer
 		User.find(object.user_id).avatar
 	end
 
-	def fecha
+	def date
 		object.created_at
 	end
 
