@@ -44,14 +44,6 @@ ActiveRecord::Schema.define(version: 20180427225453) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "comments", force: :cascade do |t|
-    t.string "comment"
-    t.integer "user_id"
-    t.integer "scorecomment_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "commentteachers", force: :cascade do |t|
     t.integer "user_id"
     t.integer "teacher_id"
@@ -172,7 +164,6 @@ ActiveRecord::Schema.define(version: 20180427225453) do
   create_table "teachers", force: :cascade do |t|
     t.string "name"
     t.string "description"
-    t.integer "scoreteacher_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

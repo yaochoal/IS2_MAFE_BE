@@ -87,8 +87,7 @@ end
 50.times do 
     Teacher.create([{
         name: Faker::Name.name,
-        description: Faker::RickAndMorty.quote,
-        scoreteacher_id: rand(1...500)
+        description: Faker::RickAndMorty.quote
         }])
 end
 
