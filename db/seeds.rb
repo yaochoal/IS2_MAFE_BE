@@ -577,153 +577,213 @@ end
  
     Teacher.create([
 	    {
-        name:HUGO ALBERTO HERRERA FONSECA,#1
+        name:'HUGO ALBERTO HERRERA FONSECA',#1
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:ALFONSO HERRERA JIMENEZ,#2,3
+        name:'ALFONSO HERRERA JIMENEZ',#2,3
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:JULIO CESAR CAÑON RODRIGUEZ,#3
+        name:'JULIO CESAR CAÑON RODRIGUEZ',#3
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:JAIRO TORRES PARRA,#3
+        name:'JAIRO TORRES PARRA',#3
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:FELIX ANTONIO CORTES ALDANA,#3
+        name:'FELIX ANTONIO CORTES ALDANA',#3
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:CARLOS HERNAN CAICEDO ESCOBAR,#3
+        name:'CARLOS HERNAN CAICEDO ESCOBAR',#3,26
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:PEDRO AGUSTIN PEREZ TORRES,#3
+        name:'PEDRO AGUSTIN PEREZ TORRES',#3
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:FERNANDO GUZMAN CASTRO,#4
+        name:'FERNANDO GUZMAN CASTRO',#4
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:ISMAEL CASTAÑEDA FUENTES,#5
+        name:'ISMAEL CASTAÑEDA FUENTES',#5
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:JUAN CARLOS TORRES PARDO,#5
+        name:'JUAN CARLOS TORRES PARDO',#5
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:JORGE ENRIQUE AMAYA CALA,#6
+        name:'JORGE ENRIQUE AMAYA CALA',#6
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:ALEXEI GABRIEL OCHOA DUARTE,#6
+        name:'ALEXEI GABRIEL OCHOA DUARTE',#6
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:JOSE DANIEL SALAZAR MORA,#6
+        name:'JOSE DANIEL SALAZAR MORA',#6
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:JEAN PIERRE CHARALAMBOS HERNANDEZ,#6
+        name:'JEAN PIERRE CHARALAMBOS HERNANDEZ',#6
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:FABIAN ANDRES GIRALDO GIRALDO,#6
+        name:'FABIAN ANDRES GIRALDO GIRALDO',#6
+        description: Faker::RickAndMorty.quote,
+        },		
+		{
+        name:'MICHAEL SILVA CRUZ',#7,15
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:JOSE DANIEL SALAZAR MORA,#6
+        name:'HECTOR CIFUENTES AYA',#7,18
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:'JUAN SEBASTIAN PARADA PORTILLA',#8
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:'FELIPE AUGUSTO DIAZ SUAZA',#8
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:'OSCAR FERNANDO CASTELLANOS DOMINGUEZ',#9,19
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:'WILSON ADARME JAIMES',#10
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:'CARLOS JULIO LOZANO PIEDRAHITA',#11
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:'JOSE MARIA PINZON MONTILLA',#12
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:'JAIR EDUARDO ROCHA GONZALEZ',#13
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:'GUSTAVO ALFREDO BULA',#14
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:'JUAN DAVID SUAREZ MORENO',#16
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:'JUAN PABLO ESCAMILLA MEJIA',#16
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:'CARLOS EDUARDO MORENO MANTILLA',#17
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:'GERMAN JAIRO HERNANDEZ PEREZ',#20,23
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:'FRANCISCO MELUK OROZCO',#21
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:'TITO FLOREZ CALDERON',#22
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:'INGRID PATRICIA PAEZ PARRA',#22
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:'CESAR MANUEL LOVERA CABRERA',#22
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:'CARLOS ANDRES SIERRA VIRGUEZ',#23
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:'ANDRÉS RICARDO ARÉVALO MURILLO',#23
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:'ANDRES VERA BUITRAGO',#23
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:'NICOLÁS MÚNERA GARZÓN',#24
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:'EDGAR MIGUEL VARGAS CHAPARRO',#24
         description: Faker::RickAndMorty.quote,
         },
+		{
+        name:'SEBASTIAN ALEJANDRO VELASCO DIMATE',#25
+        description: Faker::RickAndMorty.quote,
+        },
+		{
+        name:'JEISSON ANDRÉS VERGARA VARGAS',#27
+        description: Faker::RickAndMorty.quote,
+        },
+		{
+        name:'JESUS GUILLERMO TOVAR',
+        description: Faker::RickAndMorty.quote,
+        },
+		{
+        name:'OCTAVIO JOSE SALCEDO PARRA',#inventa notas
+        description: Faker::RickAndMorty.quote,
+        },
+		{
+        name:'OSCAR AGUDELO ROJAS',
+        description: Faker::RickAndMorty.quote,
+        },
+		{
+        name:'CESAR AUGUSTO PEDRAZA BONILLA',
+        description: Faker::RickAndMorty.quote,
+        },
+		{
+        name:'FELIPE RESTREPO CALLE' ,
+        description: Faker::RickAndMorty.quote,
+        },
+		{
+        name:'JOAQUIN FERNANDO SANCHEZ CIFUENTES',
+        description: Faker::RickAndMorty.quote,
+        },
+		{
+        name:'LUIS GERARDO ASTAIZA AMADO',
+        description: Faker::RickAndMorty.quote,
+        },
+		{
+        name:'JUAN CARLOS ALDANA BERNAL',
+        description: Faker::RickAndMorty.quote,
+        },
+		{
+        name:'CARLOS OSORIO RAMIREZ',
+        description: Faker::RickAndMorty.quote,
+        },
+		{
+        name:'JORGE ELIECER CAMARGO MENDOZA',
+        description: Faker::RickAndMorty.quote,
+        },
+		{
+        name:'FABIO AUGUSTO GONZALEZ OSORIO',
+        description: Faker::RickAndMorty.quote,
+        },
+		{
+        name:'JONATAN GOMEZ PERDOMO',
+        description: Faker::RickAndMorty.quote,
+        }
 		])
 
 
