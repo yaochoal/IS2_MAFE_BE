@@ -577,67 +577,67 @@ end
  
     Teacher.create([
 	    {
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:HUGO ALBERTO HERRERA FONSECA,#1
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:ALFONSO HERRERA JIMENEZ,#2,3
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:JULIO CESAR CAÑON RODRIGUEZ,#3
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:JAIRO TORRES PARRA,#3
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:FELIX ANTONIO CORTES ALDANA,#3
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:CARLOS HERNAN CAICEDO ESCOBAR,#3
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:PEDRO AGUSTIN PEREZ TORRES,#3
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:FERNANDO GUZMAN CASTRO,#4
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:ISMAEL CASTAÑEDA FUENTES,#5
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:JUAN CARLOS TORRES PARDO,#5
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:JORGE ENRIQUE AMAYA CALA,#6
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:ALEXEI GABRIEL OCHOA DUARTE,#6
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:JOSE DANIEL SALAZAR MORA,#6
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:JEAN PIERRE CHARALAMBOS HERNANDEZ,#6
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:FABIAN ANDRES GIRALDO GIRALDO,#6
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name: HUGO ALBERTO HERRERA FONSECA,
+        name:JOSE DANIEL SALAZAR MORA,#6
         description: Faker::RickAndMorty.quote,
         },
 		{
