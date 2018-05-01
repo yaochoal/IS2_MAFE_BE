@@ -73,235 +73,235 @@ Career.create([{
  
     Course.create([
 	{
-        name: 'Trabajo de Grado - Asignaturas de Posgrado',
+        name: 'Trabajo de Grado - Asignaturas de Posgrado',#Todos
         code: 2015321
     },
 	{
-        name: 'Gerencia de recursos humanos',
+        name: 'Gerencia de recursos humanos',#Ingeniería Industrial
         code: 2015701
     },
 	{
-        name: 'Gerencia y gestión de proyectos',
+        name: 'Gerencia y gestión de proyectos',#Ingeniería Industrial
         code: 2015702
     },
 	{
-        name: 'Ingeniería económica',
+        name: 'Ingeniería económica',#Todos
         code: 2015703
     },
 	{
-        name: 'Programación de computadores',
+        name: 'Programación de computadores',#Todos,especial sistemas
         code: 2015734
     },
     {
-        name: 'Métodos numéricos',
+        name: 'Métodos numéricos',#Ingenieria quimica, ingenieria de sistemas
         code: 2015970
     },
 	{
-        name: 'Bases de datos',
+        name: 'Bases de datos',#Ingenieria de sistemas
         code: 2016353
     },
 	{
-        name: 'Programación orientada a objetos',
+        name: 'Programación orientada a objetos',#Ingeniería Industrial,ingenieria de sistemas, Ingenieria mecatronica
         code: 2016375
     },
 	{
-        name: 'Control y Gestión de Calidad',
+        name: 'Control y Gestión de Calidad',#Ingeniería Industrial
         code: 2016589
     },
 	{
-        name: 'Economía general',
+        name: 'Economía general',#Ingenieria Electrica,Ingenieria Electronica,Ingeniería Industrial
         code: 2016592
     },
 	{
-        name: 'Gestión Tecnológica',
+        name: 'Gestión Tecnológica',#Ingenieria de sistemas,Ingeniería Industrial,Ingeniería Mecatronica
         code: 2016600
     },
 	{
-        name: 'Logística',
+        name: 'Logística',#Ingeniería Industrial
         code: 2016605
     },
 	{
-        name: 'Seguridad industrial',
+        name: 'Seguridad industrial',#Ingeniería Todos menos sistemas
         code: 2016609
     },
 	{
-        name: 'Sistemas de costos',
+        name: 'Sistemas de costos',#Ingeniería Industrial,Ingeniería Electrica,Ingeniería Electrica
         code: 2016610
     },
 	{
-        name: 'Taller de diseño de plantas',
+        name: 'Taller de diseño de plantas',#Ingeniería Quimica,Ingeniería Mecanica, Ingeniería Mecatronica
         code: 2016612
     },
 	{
-        name: 'Taller de Ergonomía e Ingeniería de Métodos',
+        name: 'Taller de Ergonomía e Ingeniería de Métodos',#Ingeniería Industrial
         code: 2016613
     },
 	{
-        name: 'Taller de Ingeniería de la Producción',
+        name: 'Taller de Ingeniería de la Producción',#Ingeniería Quimica,Ingeniería Industrial
         code: 2016614
     },
 	{
-        name: 'Taller de invención y creatividad',
+        name: 'Taller de invención y creatividad',#Ingeniería industrial
         code: 2016615
     },
 	{
-        name: 'Taller de Metodología de la Investigación',
+        name: 'Taller de Metodología de la Investigación',#Ingeniería Industrial,Ingeniería Quimica
         code: 2016616
     },
 	{
-        name: 'Taller de Procesos Metalmecánicos',
+        name: 'Taller de Procesos Metalmecánicos',#Ingeniería Industrial, Ingeniería Mecanica, Ingeniería Mecatronica
         code: 2016618
     },
 	{
-        name: 'Taller de Procesos Químicos y Biotecnológicos',
+        name: 'Taller de Procesos Químicos y Biotecnológicos',#Ingeniería Quimica
         code: 2016619
     },
 	{
-        name: 'Algoritmos',
+        name: 'Algoritmos',#Ingeniería Sistemas y computacion
         code: 2016696
     },
 	{
-        name: 'Arquitectura de computadores',
+        name: 'Arquitectura de computadores',#Ingeniería Sistemas y computacion
         code: 2016697
     },
 	{
-        name: 'Elementos de computadores',
+        name: 'Elementos de computadores',#Ingeniería Sistemas y computacion, #Ingeniería Electrica,#Ingeniería Electrica
         code: 2016698
     },
 	{
-        name: 'Estructuras de Datos',
+        name: 'Estructuras de Datos',#Ingeniería Sistemas y computacion,#Ingeniería Mecatronica
         code: 2016699
     },
 	{
-        name: 'Ingeniería de software I',
+        name: 'Ingeniería de software I',#Ingeniería Sistemas y computacion
         code: 2016701
     },
 	{
-        name: 'Ingeniería de software II',
+        name: 'Ingeniería de software II',#Ingeniería Sistemas y computacion
         code: 2016702
     },
 	{
-        name: 'Pensamiento sistémico',
+        name: 'Pensamiento sistémico',#Ingeniería Sistemas y computacion
         code: 2016703
     },
 	{
-        name: 'Sistemas operativos',
+        name: 'Sistemas operativos',#Ingeniería Sistemas y computacion
         code: 2016707
     },
 	{
-        name: 'Arquitectura de Software',
+        name: 'Arquitectura de Software',#Ingeniería Sistemas y computacion
         code: 2016716
     },
 	{
-        name: 'Computación paralela y distribuida',
+        name: 'Computación paralela y distribuida',#Ingeniería Sistemas y computacion
         code: 2016722
     },
 	{
-        name: 'Finanzas',
+        name: 'Finanzas',#Todos
         code: 2016741
     },
 	{
-        name: 'Práctica estudiantil I',
+        name: 'Práctica estudiantil I',#Todos
         code: 2016762
     },
 	{
-        name: 'Práctica estudiantil II',
+        name: 'Práctica estudiantil II',#Todos
         code: 2016763
     },
 	{
-        name: 'Práctica estudiantil III',
+        name: 'Práctica estudiantil III',#Todos
         code: 2016764
     },
 	{
-        name: 'Tecnología Digital',
+        name: 'Tecnología Digital',#Ingeniería Sistemas y computacion
         code: 2016788
     },
 	{
-        name: 'Trabajo de grado - asignaturas de posgrado',
+        name: 'Trabajo de grado - asignaturas de posgrado',#Todos
         code: 2016843
     },
 	{
-        name: 'Aprendizaje de máquina',
+        name: 'Aprendizaje de máquina',#Ingeniería Sistemas y computacion
         code: 2019764
     },
 	{
-        name: 'Ingeniería de software avanzada',
+        name: 'Ingeniería de software avanzada',#Ingeniería Sistemas y computacion
         code: 2019772
     },
 	{
-        name: 'Minería de datos',
+        name: 'Minería de datos',#Ingeniería Sistemas y computacion
         code: 2019773
     },
 	{
-        name: 'Propuesta de Trabajo final de Maestría',
+        name: 'Propuesta de Trabajo final de Maestría',#todos
         code: 2019777
     },
 	{
-        name: 'Proyecto de Tesis de Maestría',
+        name: 'Proyecto de Tesis de Maestría',#Todos
         code: 2019778
     },
 	{
-        name: 'Sistemas de información',
+        name: 'Sistemas de información',#Ingeniería Sistemas y computacion,#Ingeniería Industrial
         code: 2019786
     },
 	{
-        name: 'Tesis de Maestría',
+        name: 'Tesis de Maestría',#todos
         code: 2019811
     },
 	{
-        name: 'Trabajo final de Maestría',
+        name: 'Trabajo final de Maestría',#todos
         code: 2019813
     },
 	{
-        name: 'Vida artificial',
+        name: 'Vida artificial',#Ingeniería Sistemas y computacion
         code: 2019814
     },
 	{
-        name: 'Curso dirigido I',
+        name: 'Curso dirigido I',#todos
         code: 2019816
     },
 	{
-        name: 'Examen de calificación',
+        name: 'Examen de calificación',#todos
         code: 2019848
     },
 	{
-        name: 'Proyecto de Tesis de Doctorado',
+        name: 'Proyecto de Tesis de Doctorado',#todos
         code: 2019849
     },
 	{
-        name: 'Seminario de investigación I',
+        name: 'Seminario de investigación I',#todos
         code: 2019850
     },
 	{
-        name: 'Seminario de investigación II',
+        name: 'Seminario de investigación II',#todos
         code: 2019851
     },
 	{
-        name: 'Tesis de Doctorado',
+        name: 'Tesis de Doctorado',#todos
         code: 2019852
     },
 	{
-        name: 'Empresa y medio ambiente',
+        name: 'Empresa y medio ambiente',#Ingeniería Industrial,Ingeniería Quimica
         code: 2020067
     },
 	{
-        name: 'Gerencia de la innovación',
+        name: 'Gerencia de la innovación',#Ingeniería Industrial
         code: 2020069
     },
 	{
-        name: 'Ingeniería económica avanzada',
+        name: 'Ingeniería económica avanzada',#Ingeniería Industrial
         code: 2020071
     },
 	{
-        name: 'Investigación y desarrollo en ingeniería industrial',
+        name: 'Investigación y desarrollo en ingeniería industrial',#Ingeniería Industrial
         code: 2020074
     },
 	{
-        name: 'Logística aplicada a redes de distribución y transporte',
+        name: 'Logística aplicada a redes de distribución y transporte',#Ingeniería Industrial
         code: 2020076
     },
 	{
-        name: 'Propuesta de Trabajo final de Maestría',
+        name: 'Propuesta de Trabajo final de Maestría',#todos
         code: 2020079
     },
 	{
@@ -317,7 +317,7 @@ Career.create([{
         code: 2020097
     },
 	{
-        name: 'Temas avanzados en geomática I',
+        name: 'Temas avanzados en geomática I',#Ingeniería Industrial,Ingeniería Quimica,Ingeniería Civil
         code: 2021133
     },
 	{
@@ -337,207 +337,207 @@ Career.create([{
         code: 2022298
     },
 	{
-        name: 'Administración de Redes',
+        name: 'Administración de Redes',#Ingeniería Sistemas y computacion
         code: 2023697
     },
 	{
-        name: 'Gestión y planeación tecnológica',
+        name: 'Gestión y planeación tecnológica',#Ingeniería Sistemas y computacion
         code: 2023707
     },
 	{
-        name: 'Política Sectorial y Negociación en Telecomunicaciones',
+        name: 'Política Sectorial y Negociación en Telecomunicaciones',#Ingeniería Sistemas y computacion
         code: 2023713
     },
 	{
-        name: 'Tesis de Doctorado',
+        name: 'Tesis de Doctorado',#Todos
         code: 2024654
     },
 	{
-        name: 'Proyecto de Tesis de Doctorado',
+        name: 'Proyecto de Tesis de Doctorado',#Todos
         code: 2024655
     },
 	{
-        name: 'Examen de calificación',
+        name: 'Examen de calificación',#Todos
         code: 2024656
     },
 	{
-        name: 'Seminario de investigación I',
+        name: 'Seminario de investigación I',#Todos
         code: 2024657
     },
 	{
-        name: 'Seminario de investigación II',
+        name: 'Seminario de investigación II',#Todos
         code: 2024658
     },
 	{
-        name: 'CURSO DIRIGIDO 1',
+        name: 'CURSO DIRIGIDO 1',#Todos
         code: 2024710
     },
 	{
-        name: 'CURSO DIRIGIDO 2',
+        name: 'CURSO DIRIGIDO 2',#Todos
         code: 2024711
     },
 	{
-        name: 'Computación visual',
+        name: 'Computación visual',#Sistemas Sistemas y Computación
         code: 2025960
     },
 	{
-        name: 'Lenguajes de programación',
+        name: 'Lenguajes de programación',#Ingeniería Sistemas y computacion
         code: 2025966
     },
 	{
-        name: 'Redes de computadores',
+        name: 'Redes de computadores',#Ingeniería Sistemas y computacion,Ingenieria Mecatronica
         code: 2025967
     },
 	{
-        name: 'Modelos estocásticos y simulación en computación y comunicaciones',
+        name: 'Modelos estocásticos y simulación en computación y comunicaciones',#Ingeniería Sistemas y computacion
         code: 2025969
     },
 	{
-        name: 'Modelos y simulación',
+        name: 'Modelos y simulación',#Ingeniería Sistemas y computacion, Ingenieria Industrial
         code: 2025970
     },
 	{
-        name: 'Optimización',
+        name: 'Optimización',#Ingeniería Sistemas y computacion, Ingenieria Industrial
         code: 2025971
     },
 	{
-        name: 'Introducción a la criptografía y a la seguridad de la Información',
+        name: 'Introducción a la criptografía y a la seguridad de la Información',#Ingeniería Sistemas y computacion
         code: 2025972
     },
 	{
-        name: 'Trabajo de grado - modalidad practica de extensión',
+        name: 'Trabajo de grado - modalidad practica de extensión',#Todos
         code: 2025973
     },
 	{
-        name: 'Trabajo de grado - modalidad trabajos investigativos',
+        name: 'Trabajo de grado - modalidad trabajos investigativos',#Todos
         code: 2025974
     },
 	{
-        name: 'Introducción a la ingeniería de sistemas y computación',
+        name: 'Introducción a la ingeniería de sistemas y computación',#Todos
         code: 2025975
     },
 	{
-        name: 'Sistemas de información',
+        name: 'Sistemas de información',#Ingeniería Sistemas y computacion, Ingenieria Industrial
         code: 2025982
     },
 	{
-        name: 'Programación de computadoresArquitectura de infraestructura y gobierno  de tics',
+        name: 'Programación de computadoresArquitectura de infraestructura y gobierno  de tics',#Ingeniería Sistemas y computacion
         code: 2025983
     },
 	{
-        name: 'Ingeniería económica y análisis de riesgo',
+        name: 'Ingeniería económica y análisis de riesgo',#Ingeniería Sistemas y computacion, Ingenieria Industrial
         code: 2025986
     },
 	{
-        name: 'Modelos estocásticos para procesos de manufactura y sistemas de servicios',
+        name: 'Modelos estocásticos para procesos de manufactura y sistemas de servicios',#Ingenieria Industrial
         code: 2025987
     },
 	{
-        name: 'Taller de simulación procesos de manufactura y sistemas de servicios',
+        name: 'Taller de simulación procesos de manufactura y sistemas de servicios',#Ingenieria Industrial
         code: 2025988
     },
 	{
-        name: 'Trabajo de grado - Modalidad practica de extension',
+        name: 'Trabajo de grado - Modalidad practica de extension',#Todos
         code: 2025989
     },
 	{
-        name: 'Trabajo de grado - Modalidad trabajos investigativos',
+        name: 'Trabajo de grado - Modalidad trabajos investigativos',#Todos
         code: 2025990
     },
 	{
-        name: 'Taller de ciencia y tecnología de materiales',
+        name: 'Taller de ciencia y tecnología de materiales',#Ingenieria Industrial , Ingenieria Mecanica
         code: 2025993
     },
 	{
-        name: 'Teoría de la información y sistemas de comunicacion',
+        name: 'Teoría de la información y sistemas de comunicacion',#Ingeniería Sistemas y computacion
         code: 2025994
     },
 	{
-        name: 'Introducción a los sistemas inteligentes',
+        name: 'Introducción a los sistemas inteligentes',#Ingeniería Sistemas y computacion
         code: 2025995
     },
 	{
-        name: 'Seminario de investigación I',
+        name: 'Seminario de investigación I',#Todos
         code: 2026118
     },
 	{
-        name: 'Seminario de investigación II',
+        name: 'Seminario de investigación II',#Todos
         code: 2026119
     },
 	{
-        name: 'Seminario de profundización I',
+        name: 'Seminario de profundización I',#Todos
         code: 2026120
     },
 	{
-        name: 'Seminario de profundización II',
+        name: 'Seminario de profundización II',#Todos
         code: 2026121
     },
 	{
-        name: 'Tesis de Maestría',
+        name: 'Tesis de Maestría',#Todos
         code: 2026141
     },
 	{
-        name: 'Proyecto de Tesis de Maestría',
+        name: 'Proyecto de Tesis de Maestría',#Todos
         code: 2026142
     },
 	{
-        name: 'Trabajo final de Maestría',
+        name: 'Trabajo final de Maestría',#Todos
         code: 2026143
     },
 	{
-        name: 'Introducción al gobierno electrónico',
+        name: 'Introducción al gobierno electrónico',#Ingeniería Sistemas y computacion
         code: 2026208
     },
 	{
-        name: 'Tecnologías de información y gobierno electrónico',
+        name: 'Tecnologías de información y gobierno electrónico',#Ingeniería Sistemas y computacion
         code: 2026231
     },
 	{
-        name: 'Gerencia de proyectos aplicado al gobierno electrónico',
+        name: 'Gerencia de proyectos aplicado al gobierno electrónico',#Ingeniería Sistemas y computacion
         code: 2026440
     },
 	{
-        name: 'Taller de herramientas y problemas en ingeniería industrial',
+        name: 'Taller de herramientas y problemas en ingeniería industrial',#Ingenieria Industrial
         code: 2026488
     },
 	{
-        name: 'Gestión de las tecnologías de información',
+        name: 'Gestión de las tecnologías de información',#Ingeniería Sistemas y computacion
         code: 2026502
     },
 	{
-        name: 'Tendencias actuales en la administración de la cadena de abastecimiento',
+        name: 'Tendencias actuales en la administración de la cadena de abastecimiento',#Ingeniería Sistemas y computacion,Ingenieria Industrial
         code: 2026525
     },
 	{
-        name: 'La calidad de servicio en el gobierno electrónico',
+        name: 'La calidad de servicio en el gobierno electrónico',#Ingeniería Sistemas y computacion
         code: 2026537
     },
 	{
-        name: 'Taller aplicado al gobierno electrónico',
+        name: 'Taller aplicado al gobierno electrónico',#Ingeniería Sistemas y computacion
         code: 2026538
     },
 	{
-        name: 'Creación y gestión de empresas',
+        name: 'Creación y gestión de empresas',#Ingenieria Industrial
         code: 2026551
     },
 	{
-        name: 'Introducción a la ingeniería industrial',
+        name: 'Introducción a la ingeniería industrial',#Ingenieria Industrial
         code: 2026805
     },
 	{
-        name: 'Biología de sistemas',
+        name: 'Biología de sistemas',#Ingeniería Sistemas y computacion
         code: 2026806
     },
 	{
-        name: 'Investigación y gestión de mercados',
+        name: 'Investigación y gestión de mercados',#Ingenieria Industrial
         code: 2026814
     },
 	{
-        name: 'Temas avanzados de lenguajes de programación',
+        name: 'Temas avanzados de lenguajes de programación',#Ingeniería Sistemas y computacion
         code: 2027030
     },
 	{
-        name: 'PGobierno electrónico y regulación',
+        name: 'PGobierno electrónico y regulación',#Ingeniería Sistemas y computacion
         code: 2027201
     }
 		
@@ -597,7 +597,7 @@ end
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'CARLOS HERNAN CAICEDO ESCOBAR',#3,26
+        name:'CARLOS HERNAN CAICEDO ESCOBAR',#3,28
         description: Faker::RickAndMorty.quote,
         },
 		{
@@ -605,183 +605,184 @@ end
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'FERNANDO GUZMAN CASTRO',#4
+        name:'FERNANDO GUZMAN CASTRO',#4,5
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'ISMAEL CASTAÑEDA FUENTES',#5
+        name:'ISMAEL CASTAÑEDA FUENTES',#7
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'JUAN CARLOS TORRES PARDO',#5
+        name:'JUAN CARLOS TORRES PARDO',#7,105
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'JORGE ENRIQUE AMAYA CALA',#6
+        name:'JORGE ENRIQUE AMAYA CALA',#8
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'ALEXEI GABRIEL OCHOA DUARTE',#6
+        name:'ALEXEI GABRIEL OCHOA DUARTE',#8
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'JOSE DANIEL SALAZAR MORA',#6
+        name:'JOSE DANIEL SALAZAR MORA',#8
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'JEAN PIERRE CHARALAMBOS HERNANDEZ',#6
+        name:'JEAN PIERRE CHARALAMBOS HERNANDEZ',#8,77
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'FABIAN ANDRES GIRALDO GIRALDO',#6
+        name:'FABIAN ANDRES GIRALDO GIRALDO',#8
         description: Faker::RickAndMorty.quote,
         },		
 		{
-        name:'MICHAEL SILVA CRUZ',#7,15
+        name:'MICHAEL SILVA CRUZ',#9,18
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'HECTOR CIFUENTES AYA',#7,18
+        name:'HECTOR CIFUENTES AYA',#9,21
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'JUAN SEBASTIAN PARADA PORTILLA',#8
+        name:'JUAN SEBASTIAN PARADA PORTILLA',#10
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'FELIPE AUGUSTO DIAZ SUAZA',#8
+        name:'FELIPE AUGUSTO DIAZ SUAZA',#10
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'OSCAR FERNANDO CASTELLANOS DOMINGUEZ',#9,19
+        name:'OSCAR FERNANDO CASTELLANOS DOMINGUEZ',#11,21
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'WILSON ADARME JAIMES',#10
+        name:'WILSON ADARME JAIMES',#12
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'CARLOS JULIO LOZANO PIEDRAHITA',#11
+        name:'CARLOS JULIO LOZANO PIEDRAHITA',#13
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'JOSE MARIA PINZON MONTILLA',#12
+        name:'JOSE MARIA PINZON MONTILLA',#15
+        description: Faker::RickAndMorty.quote,
+		
+        },
+		{
+        name:'JAIR EDUARDO ROCHA GONZALEZ',#16
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'JAIR EDUARDO ROCHA GONZALEZ',#13
+        name:'GUSTAVO ALFREDO BULA',#17
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'GUSTAVO ALFREDO BULA',#14
+        name:'JUAN DAVID SUAREZ MORENO',#18
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'JUAN DAVID SUAREZ MORENO',#16
+        name:'JUAN PABLO ESCAMILLA MEJIA',#19
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'JUAN PABLO ESCAMILLA MEJIA',#16
+        name:'CARLOS EDUARDO MORENO MANTILLA',#20
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'CARLOS EDUARDO MORENO MANTILLA',#17
+        name:'GERMAN JAIRO HERNANDEZ PEREZ',#22,26
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'GERMAN JAIRO HERNANDEZ PEREZ',#20,23
+        name:'FRANCISCO MELUK OROZCO',#23,36
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'FRANCISCO MELUK OROZCO',#21
+        name:'TITO FLOREZ CALDERON',#24
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'TITO FLOREZ CALDERON',#22
+        name:'INGRID PATRICIA PAEZ PARRA',#24
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'INGRID PATRICIA PAEZ PARRA',#22
+        name:'CESAR MANUEL LOVERA CABRERA',#25,79,95
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'CESAR MANUEL LOVERA CABRERA',#22
+        name:'CARLOS ANDRES SIERRA VIRGUEZ',#25
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'CARLOS ANDRES SIERRA VIRGUEZ',#23
+        name:'ANDRÉS RICARDO ARÉVALO MURILLO',#25
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'ANDRÉS RICARDO ARÉVALO MURILLO',#23
+        name:'ANDRES VERA BUITRAGO',#25
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'ANDRES VERA BUITRAGO',#23
+        name:'NICOLÁS MÚNERA GARZÓN',#25
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'NICOLÁS MÚNERA GARZÓN',#24
+        name:'EDGAR MIGUEL VARGAS CHAPARRO',#26,95
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'EDGAR MIGUEL VARGAS CHAPARRO',#24
+        name:'SEBASTIAN ALEJANDRO VELASCO DIMATE',#27
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'SEBASTIAN ALEJANDRO VELASCO DIMATE',#25
+        name:'JEISSON ANDRÉS VERGARA VARGAS',#29
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'JEISSON ANDRÉS VERGARA VARGAS',#27
+        name:'JESUS GUILLERMO TOVAR',#67,79
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'JESUS GUILLERMO TOVAR',
+        name:'OCTAVIO JOSE SALCEDO PARRA',#79
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'OCTAVIO JOSE SALCEDO PARRA',#inventa notas
+        name:'OSCAR AGUDELO ROJAS',#31
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'OSCAR AGUDELO ROJAS',
+        name:'CESAR AUGUSTO PEDRAZA BONILLA',#29,31
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'CESAR AUGUSTO PEDRAZA BONILLA',
+        name:'FELIPE RESTREPO CALLE' ,#78,116
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'FELIPE RESTREPO CALLE' ,
+        name:'JOAQUIN FERNANDO SANCHEZ CIFUENTES',#78
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'JOAQUIN FERNANDO SANCHEZ CIFUENTES',
+        name:'LUIS GERARDO ASTAIZA AMADO',#81,82
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'LUIS GERARDO ASTAIZA AMADO',
+        name:'JUAN CARLOS ALDANA BERNAL',#81,82
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'JUAN CARLOS ALDANA BERNAL',
+        name:'CARLOS OSORIO RAMIREZ',#82
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'CARLOS OSORIO RAMIREZ',
+        name:'JORGE ELIECER CAMARGO MENDOZA',#83
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'JORGE ELIECER CAMARGO MENDOZA',
+        name:'FABIO AUGUSTO GONZALEZ OSORIO',#38
         description: Faker::RickAndMorty.quote,
         },
 		{
-        name:'FABIO AUGUSTO GONZALEZ OSORIO',
-        description: Faker::RickAndMorty.quote,
-        },
-		{
-        name:'JONATAN GOMEZ PERDOMO',
+        name:'JONATAN GOMEZ PERDOMO',#46,96
         description: Faker::RickAndMorty.quote,
         }
 		])
