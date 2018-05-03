@@ -3,10 +3,8 @@
 # Table name: scoreteachers
 #
 #  id         :integer          not null, primary key
-#  user_id    :integer
-#  teacher_id :integer
-#  positive   :integer
-#  negative   :integer
+#  score      :integer
+#  votes      :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #

@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180427225453) do
+<<<<<<< HEAD
+ActiveRecord::Schema.define(version: 20180419072907) do
+
+  create_table "books", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+=======
+ActiveRecord::Schema.define(version: 20180403195056) do
+>>>>>>> SPRINT_REVISION_3
 
   create_table "career_has_courses", force: :cascade do |t|
     t.integer "career_id"
@@ -28,26 +39,10 @@ ActiveRecord::Schema.define(version: 20180427225453) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "commentcourses", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "course_id"
+  create_table "comments", force: :cascade do |t|
     t.string "comment"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "commentresources", force: :cascade do |t|
     t.integer "user_id"
-    t.integer "resource_id"
-    t.string "comment"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "commentteachers", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "teacher_id"
-    t.string "comment"
+    t.integer "scorecomment_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -62,13 +57,13 @@ ActiveRecord::Schema.define(version: 20180427225453) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "course_has_resources", force: :cascade do |t|
+  create_table "course_has_themes", force: :cascade do |t|
     t.integer "course_id"
-    t.integer "resource_id"
+    t.integer "theme_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["course_id"], name: "index_course_has_resources_on_course_id"
-    t.index ["resource_id"], name: "index_course_has_resources_on_resource_id"
+    t.index ["course_id"], name: "index_course_has_themes_on_course_id"
+    t.index ["theme_id"], name: "index_course_has_themes_on_theme_id"
   end
 
   create_table "courses", force: :cascade do |t|
@@ -78,47 +73,37 @@ ActiveRecord::Schema.define(version: 20180427225453) do
     t.datetime "updated_at", null: false
   end
 
+<<<<<<< HEAD
+  create_table "covers", force: :cascade do |t|
+    t.integer "book_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "photo_file_name"
+    t.string "photo_content_type"
+    t.integer "photo_file_size"
+    t.datetime "photo_updated_at"
+  end
+
+=======
+>>>>>>> SPRINT_REVISION_3
   create_table "resources", force: :cascade do |t|
     t.string "name"
     t.string "link"
-    t.integer "user_id"
     t.integer "scoreresource_id"
+<<<<<<< HEAD
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_resources_on_user_id"
+=======
     t.string "description"
     t.string "resource"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+>>>>>>> SPRINT_REVISION_3
   end
 
-  create_table "scorecommentcourses", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "commentcourse_id"
-    t.integer "negative"
-    t.integer "positive"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "scorecommentresources", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "commentresource_id"
-    t.integer "negative"
-    t.integer "positive"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "scorecommentteachers", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "commentteacher_id"
-    t.integer "negative"
-    t.integer "positive"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "scorecourses", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "course_id"
+  create_table "scorecomments", force: :cascade do |t|
     t.integer "positive"
     t.integer "negative"
     t.datetime "created_at", null: false
@@ -126,19 +111,15 @@ ActiveRecord::Schema.define(version: 20180427225453) do
   end
 
   create_table "scoreresources", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "resource_id"
-    t.integer "positive"
-    t.integer "negative"
+    t.integer "score"
+    t.integer "votes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "scoreteachers", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "teacher_id"
-    t.integer "positive"
-    t.integer "negative"
+    t.integer "score"
+    t.integer "votes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -152,16 +133,24 @@ ActiveRecord::Schema.define(version: 20180427225453) do
     t.index ["teacher_id"], name: "index_teacher_has_courses_on_teacher_id"
   end
 
-  create_table "teacher_has_resources", force: :cascade do |t|
-    t.integer "teacher_id"
-    t.integer "resource_id"
+  create_table "teachers", force: :cascade do |t|
+    t.string "name"
+    t.string "description"
+    t.integer "scoreteacher_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["resource_id"], name: "index_teacher_has_resources_on_resource_id"
-    t.index ["teacher_id"], name: "index_teacher_has_resources_on_teacher_id"
   end
 
-  create_table "teachers", force: :cascade do |t|
+  create_table "theme_has_resources", force: :cascade do |t|
+    t.integer "resource_id"
+    t.integer "theme_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["resource_id"], name: "index_theme_has_resources_on_resource_id"
+    t.index ["theme_id"], name: "index_theme_has_resources_on_theme_id"
+  end
+
+  create_table "themes", force: :cascade do |t|
     t.string "name"
     t.string "description"
     t.datetime "created_at", null: false
@@ -171,7 +160,10 @@ ActiveRecord::Schema.define(version: 20180427225453) do
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "password1"
+<<<<<<< HEAD
+=======
     t.string "image"
+>>>>>>> SPRINT_REVISION_3
     t.string "avatar"
     t.integer "career_id"
     t.datetime "created_at", null: false

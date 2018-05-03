@@ -74,22 +74,116 @@ end
 
 
 50.times do
+    Theme.create([{
+        name: Faker::Name.title,
+        description: Faker::RickAndMorty.location 
+
+    }])
+end
+
+
+
+50.times do
     Resource.create([{
         name: Faker::Name.title,
         link: Faker::Internet.url,
+<<<<<<< HEAD
+=======
         description: Faker::RickAndMorty.quote,
+>>>>>>> SPRINT_REVISION_3
         scoreresource_id: rand(1...500)
     }])
 end
 
 
 
+
+50.times do
+    Scoreresource.create([{
+        score: rand(1...5),
+        votes: rand(1...500)
+    }])
+end
+
 50.times do 
     Teacher.create([{
         name: Faker::Name.name,
-        description: Faker::RickAndMorty.quote
+        description: Faker::RickAndMorty.quote,
+        scoreteacher_id: rand(1...500)
         }])
 end
 
+
+
+50.times do 
+    Scoreteacher.create([{
+        score: rand(1...5),
+        votes: rand(1...500)
+        }])
+end
+
+
+
+50.times do 
+    Comment.create([{
+        comment: Faker::HitchhikersGuideToTheGalaxy.quote,
+        user_id: rand(1...500),
+        scorecomment_id: rand(1...500)
+        }])
+end
+
+
+
+
+50.times do 
+    Scorecomment.create([{
+        positive: rand(1...250),
+        negative: rand(1...250)
+        }])
+end
+
+
+TeacherHasCourse.create([
+		{
+        teacher_id: 1,
+        course_id: 1
+		},
+		{
+        teacher_id: 1,
+        course_id: 2
+		},
+		{
+        teacher_id: 1,
+        course_id: 3
+		},
+		{
+        teacher_id: 1,
+        course_id: 4
+		},
+		{
+        teacher_id: 1,
+        course_id: 5
+		},
+		{
+        teacher_id: 2,
+        course_id: 2
+		},
+		{
+        teacher_id: 2,
+        course_id: 4
+		},
+		{
+        teacher_id: 2,
+        course_id: 1
+		},
+		{
+        teacher_id: 4,
+        course_id: 1
+		},
+		{
+        teacher_id: 5,
+        course_id: 3
+		}
+        ])
 
 
