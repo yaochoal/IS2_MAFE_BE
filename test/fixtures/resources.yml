@@ -5,12 +5,10 @@
 #  id               :integer          not null, primary key
 #  name             :string
 #  link             :string
+#  user_id          :integer
 #  scoreresource_id :integer
-<<<<<<< HEAD
-=======
 #  description      :string
 #  resource         :string
->>>>>>> SPRINT_REVISION_3
 #  created_at       :datetime         not null
 #  updated_at       :datetime         not null
 #

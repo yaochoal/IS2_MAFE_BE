@@ -10,7 +10,9 @@
 #
 
 class Career < ApplicationRecord
+    #asosiacion de carrera a sus usuarios
     has_many :users
+    #asosiacion de carreras a materias
     has_many :career_has_courses
     has_many :courses, through: :career_has_courses
   	#ver las materias de de una carrera id

@@ -16,21 +16,21 @@ class TestsController < ApplicationController
 
   # POST /resources
   def create
-    @resource = Resource.create(name:params[:name],description: params[:description],resource: params[:resource])
-   
+   @resource = Resource.create(name:params[:name],description: params[:description],resource: params[:resource],user_id: params[:user_id])
+    @resource.save
+    @resource.link = "http://localhost:3000"+@resource.resource.url
+    
     if @resource.save
       render json: @resource, status: :created, location: @resource
-      # ResourceMailer.new_resource(@resource).deliver_now
+       #ResourceMailer.new_resource(@resource).deliver_now
     else
       render json: @resource.errors, status: :unprocessable_entity
     end
-    @resource.link = "http://localhost:3000"+@resource.resource.url
-    @resource.save
   end
 
   # PATCH/PUT /resources/1
   def update
-      @resource.update(resource: params[:resource],name: params[:name],description:params[:description])
+      @resource.update(resource: params[:resource],name: params[:name],description:params[:description],user_id: params[:user_id])
       @resource.save
       @resource.link = "http://localhost:3000"+@resource.resource.url
       @resource.save
@@ -49,6 +49,6 @@ class TestsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def resource_params
-      params.require(:resource).permit(:name, :link,:resource,:description)
+      params.require(:resource).permit(:name, :link,:resource,:description,:user_id)
     end
 end

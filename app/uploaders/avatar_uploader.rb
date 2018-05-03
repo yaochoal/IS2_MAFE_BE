@@ -1,12 +1,7 @@
 class AvatarUploader < CarrierWave::Uploader::Base
   # Include RMagick or MiniMagick support:
-<<<<<<< HEAD
-  # include CarrierWave::RMagick
-  # include CarrierWave::MiniMagick
-=======
   #include CarrierWave::RMagick
    include CarrierWave::MiniMagick
->>>>>>> SPRINT_REVISION_3
 
   # Choose what kind of storage to use for this uploader:
   storage :file
@@ -21,11 +16,7 @@ class AvatarUploader < CarrierWave::Uploader::Base
   # Provide a default URL as a default if there hasn't been a file uploaded:
   def default_url(*args)
     # For Rails 3.1+ asset pipeline compatibility:
-<<<<<<< HEAD
-    ActionController::Base.helpers.asset_path("default-avatar.png")
-=======
     ActionController::Base.helpers.asset_path("uploads/images/default-avatar.png")
->>>>>>> SPRINT_REVISION_3
   
     #"/images/fallback/" + [version_name, "default.png"].compact.join('_')
   end
@@ -38,15 +29,9 @@ class AvatarUploader < CarrierWave::Uploader::Base
   # end
 
   # Create different versions of your uploaded files:
-<<<<<<< HEAD
-  # version :thumb do
-  #   process resize_to_fit: [50, 50]
-  # end
-=======
    version :thumb do
      process resize_to_fill: [250, 250]
    end
->>>>>>> SPRINT_REVISION_3
 
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:
@@ -59,8 +44,4 @@ class AvatarUploader < CarrierWave::Uploader::Base
   # def filename
   #   "something.jpg" if original_filename
   # end
-<<<<<<< HEAD
 end
-=======
-end
->>>>>>> SPRINT_REVISION_3
