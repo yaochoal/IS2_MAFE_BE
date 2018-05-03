@@ -17,10 +17,6 @@ class CommentsController < ApplicationController
   def create
     @comment = Comment.new(comment_params)
     if @comment.save
-<<<<<<< HEAD
-      user = User.find_by_id(@comment.user_id)
-=======
->>>>>>> SPRINT_REVISION_3
       CommentMailer.new_comment(user, @comment).deliver_now
       render json: @comment, status: :created, location: @comment
     else

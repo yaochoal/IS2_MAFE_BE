@@ -1,10 +1,6 @@
 class UsersController < ApplicationController
-<<<<<<< HEAD
-  before_action :authenticate_user, only: [:index,:show, :update, :destroy]
-=======
   
   #before_action :authenticate_user, only: [:index,:show, :update, :destroy]
->>>>>>> SPRINT_REVISION_3
   before_action :set_user, only: [:show, :update, :destroy]
 
   # GET /users
@@ -20,14 +16,10 @@ class UsersController < ApplicationController
   # POST /users
   def create
     @user = User.new(user_params)
-<<<<<<< HEAD
-
-=======
->>>>>>> SPRINT_REVISION_3
     respond_to do |format|
       if @user.save
       #Tell the UserMail to send a welcome email after save
-        UserMailer.welcome_mail(@user).deliver_now
+      WelcomeMailerJob.perform_later(@user)
         render json: @user, status: :created, location: @user 
       else
         render json: @user.errors, status: :unprocessable_entity 
@@ -37,13 +29,6 @@ end
 
   # PATCH/PUT /users/1
   def update
-<<<<<<< HEAD
-    if @user.update(user_params)
-      render json: @user
-    else
-      render json: @user.errors, status: :unprocessable_entity
-    end
-=======
     if(params[:base64])
       
       @user.image = params[:base64]
@@ -60,7 +45,6 @@ end
     end
     
     
->>>>>>> SPRINT_REVISION_3
   end
 
   # DELETE /users/1
@@ -76,10 +60,6 @@ end
 
     # Only allow a trusted parameter "white list" through.
     def user_params
-<<<<<<< HEAD
-      params.require(:user).permit(:username, :password, :email, :avatar)
-=======
       params.require(:user).permit(:username, :password, :email, :avatar,:image)
->>>>>>> SPRINT_REVISION_3
     end
 end

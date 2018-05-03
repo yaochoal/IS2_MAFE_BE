@@ -6,11 +6,8 @@
 #  name             :string
 #  link             :string
 #  scoreresource_id :integer
-<<<<<<< HEAD
-=======
 #  description      :string
 #  resource         :string
->>>>>>> SPRINT_REVISION_3
 #  created_at       :datetime         not null
 #  updated_at       :datetime         not null
 #
@@ -19,12 +16,7 @@ class Resource < ApplicationRecord
   has_many :theme_has_resources
   has_many :themes, through: :theme_has_resources
   belongs_to  :scoreresource, required: false
-<<<<<<< HEAD
-  belongs_to :user
-  mount_uploader :link, DocumentUploader
-=======
   mount_base64_uploader :resource, PdfsUploader
->>>>>>> SPRINT_REVISION_3
   #ver los temas de apoyo de un recurso id
   def self.get_idthemes(params)
    		self.joins(:themes).select('resources.id,resources.name as resource_name, themes.id as teacher_id, themes.name as theme_name').where(id: params)

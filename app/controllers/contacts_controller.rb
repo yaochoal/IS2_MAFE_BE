@@ -15,7 +15,8 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
     if @contact.save
-      UserMailer.contact_mail(@contact).deliver_now
+      #UserMailer.contact_mail(@contact).deliver_now
+      MailerJobJob.perform_later(@contact)
       render json: @contact
     else
       render json: @contact.errors, status: :unprocessable_entity

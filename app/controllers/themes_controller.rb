@@ -46,10 +46,6 @@ class ThemesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def theme_params
-<<<<<<< HEAD
-      params.require(:theme).permit(:name, :description, :document_data => [])
-=======
       params.require(:theme).permit(:name, :description)
->>>>>>> SPRINT_REVISION_3
     end
 end

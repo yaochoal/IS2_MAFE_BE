@@ -23,11 +23,6 @@ gem 'knock'
 gem 'active_model_serializers', '~> 0.10.0'
 #gem 'bcrypt', platforms: :ruby
 gem 'devise'
-<<<<<<< HEAD
-
-gem 'carrierwave', '~> 1.0'
-=======
->>>>>>> SPRINT_REVISION_3
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
@@ -44,6 +39,10 @@ gem 'rack-cors', :require => 'rack/cors'
 gem 'faker', '~> 1.8', '>= 1.8.7'
 
 gem 'responders'
+
+gem 'daemons'
+gem 'delayed_job'
+gem 'delayed_job_active_record'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

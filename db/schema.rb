@@ -10,8 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20180419072907) do
+ActiveRecord::Schema.define(version: 20180503033816) do
 
   create_table "books", force: :cascade do |t|
     t.string "title"
@@ -19,9 +18,6 @@ ActiveRecord::Schema.define(version: 20180419072907) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
-=======
-ActiveRecord::Schema.define(version: 20180403195056) do
->>>>>>> SPRINT_REVISION_3
 
   create_table "career_has_courses", force: :cascade do |t|
     t.integer "career_id"
@@ -73,7 +69,6 @@ ActiveRecord::Schema.define(version: 20180403195056) do
     t.datetime "updated_at", null: false
   end
 
-<<<<<<< HEAD
   create_table "covers", force: :cascade do |t|
     t.integer "book_id"
     t.datetime "created_at", null: false
@@ -84,23 +79,29 @@ ActiveRecord::Schema.define(version: 20180403195056) do
     t.datetime "photo_updated_at"
   end
 
-=======
->>>>>>> SPRINT_REVISION_3
+  create_table "delayed_jobs", force: :cascade do |t|
+    t.integer "priority", default: 0, null: false
+    t.integer "attempts", default: 0, null: false
+    t.text "handler", null: false
+    t.text "last_error"
+    t.datetime "run_at"
+    t.datetime "locked_at"
+    t.datetime "failed_at"
+    t.string "locked_by"
+    t.string "queue"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.index ["priority", "run_at"], name: "delayed_jobs_priority"
+  end
+
   create_table "resources", force: :cascade do |t|
     t.string "name"
     t.string "link"
     t.integer "scoreresource_id"
-<<<<<<< HEAD
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id"
     t.index ["user_id"], name: "index_resources_on_user_id"
-=======
-    t.string "description"
-    t.string "resource"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
->>>>>>> SPRINT_REVISION_3
   end
 
   create_table "scorecomments", force: :cascade do |t|
@@ -160,10 +161,6 @@ ActiveRecord::Schema.define(version: 20180403195056) do
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "password1"
-<<<<<<< HEAD
-=======
-    t.string "image"
->>>>>>> SPRINT_REVISION_3
     t.string "avatar"
     t.integer "career_id"
     t.datetime "created_at", null: false
