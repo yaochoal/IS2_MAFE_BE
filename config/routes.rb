@@ -65,14 +65,16 @@
 
 Rails.application.routes.draw do
   resources :contacts
+  resources :scores
+  resources :search
+  resources :socials
+  resources :tests
+  resources :resourcespdfs
+  resources :teacherspdfs
   post 'user_token' => 'user_token#create'
   devise_for :users 
-  resources :scoreresources
-  resources :scoreteachers
-  resources :scorecomments
   resources :comments
   resources :resources
-  resources :themes
   resources :teachers
   resources :courses
   resources :careers

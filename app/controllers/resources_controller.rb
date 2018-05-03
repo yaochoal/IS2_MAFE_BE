@@ -4,33 +4,22 @@ class ResourcesController < ApplicationController
   # GET /resources
   #http://localhost:3000/resources?page=1
   def index
-    @resources = Resource.paginate(:page => params[:page], per_page:6)
+    @resources = Resource.paginate(:page => params[:page], per_page:6).order(created_at: :desc)
 
     render json: @resources
   end
 
   # GET /resources/1
   def show
-    @resource = Resource.find(params[:id]) 
-    respond_to do |format|
-	format.html
-		format.pdf do
-		pdf = ResourPdf.new#Prawn::Document.new#
-		#pdf.text "hola mundo"
-		send_data pdf.render, filename: "Resourse.pdf",
-							  type: "application/pdf",
-							  disposition: "inline"
-		
-		end
-		end
+    render json: @resource
   end
-  
 
   # POST /resources
   def create
-    @resource = Resource.new(resource_params)
+    @resource = Resource.create(resource_params)
 
     if @resource.save
+    #	ResourceMailer.new_resource(@resource).deliver_now
       render json: @resource, status: :created, location: @resource
     else
       render json: @resource.errors, status: :unprocessable_entity
@@ -39,10 +28,17 @@ class ResourcesController < ApplicationController
 
   # PATCH/PUT /resources/1
   def update
-    if @resource.update(resource_params)
-      render json: @resource
+    if(params[:resource])
+    @resource.resource = params[:resource]
+      @resource.save
+      @resource.link = "http://localhost:3000"+@resource.resource.url
+      @resource.save
     else
-      render json: @resource.errors, status: :unprocessable_entity
+       if @resource.update(resource_params)
+         render json: @resource
+      else
+         render json: @resource.errors, status: :unprocessable_entity
+      end
     end
   end
 
@@ -59,6 +55,6 @@ class ResourcesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def resource_params
-      params.require(:resource).permit(:name, :link)
+      params.require(:resource).permit(:name, :link,:resource,:description)
     end
 end

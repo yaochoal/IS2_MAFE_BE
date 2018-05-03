@@ -1,0 +1,26 @@
+# == Schema Information
+#
+# Table name: scorecommentresources
+#
+#  id                 :integer          not null, primary key
+#  user_id            :integer
+#  commentresource_id :integer
+#  negative           :integer
+#  positive           :integer
+#  created_at         :datetime         not null
+#  updated_at         :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  comment_resource_id: 1
+  negative: 1
+  positive: 1
+
+two:
+  user_id: 1
+  comment_resource_id: 1
+  negative: 1
+  positive: 1

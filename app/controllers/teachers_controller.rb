@@ -10,18 +10,7 @@ class TeachersController < ApplicationController
 
   # GET /teachers/1
   def show
-	teacher = Teacher.find(params[:id]) 
-    #render json: @teacher
-	respond_to do |format|
-	format.html
-		format.pdf do
-		pdf = ReportePdf.new#Prawn::Document.new#
-		send_data pdf.render, filename: "Reporte.pdf",
-							  type: "application/pdf",
-							  disposition: "inline"
-		
-		end
-		end
+    render json: @teacher
   end
 
   # POST /teachers
