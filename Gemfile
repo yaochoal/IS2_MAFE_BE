@@ -13,6 +13,7 @@ gem 'sqlite3'
 #gema para pdf
 gem 'wicked_pdf'
 gem 'prawn'
+gem 'prawn-graph','~> 1.0'
 #gema complemento pdf si se usa wicked_pdf
 gem 'wkhtmltopdf-binary'
 # Use Puma as the app server
