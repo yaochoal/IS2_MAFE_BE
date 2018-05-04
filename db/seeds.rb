@@ -1,21 +1,4 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Marketplace
-Explore
- @diagarciaar
-Sign out
-0
-0 0 yodahG2/IS2_MAFE_BE
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights
-IS2_MAFE_BE/db/seeds.rb
-53d66ab  2 days ago
-@diagarciaar diagarciaar mas completa
-@diagarciaar @yaochoal
-      
-856 lines (809 sloc)  20.8 KB
+
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
@@ -562,33 +545,11 @@ Career.create([{
 	])
 
 
-
-
-50.times do
-    Theme.create([{
-        name: Faker::Name.title,
-        description: Faker::RickAndMorty.location 
-
-    }])
-end
-
-
-
 50.times do
     Resource.create([{
         name: Faker::Name.title,
         link: Faker::Internet.url,
         scoreresource_id: rand(1...500)
-    }])
-end
-
-
-
-
-50.times do
-    Scoreresource.create([{
-        score: rand(1...5),
-        votes: rand(1...500)
     }])
 end
 
@@ -805,28 +766,6 @@ end
         }
 		])
 
-
-
-
-50.times do 
-    Comment.create([{
-        comment: Faker::HitchhikersGuideToTheGalaxy.quote,
-        user_id: rand(1...500),
-        scorecomment_id: rand(1...500)
-        }])
-end
-
-
-
-
-50.times do 
-    Scorecomment.create([{
-        positive: rand(1...250),
-        negative: rand(1...250)
-        }])
-end
-
-
 TeacherHasCourse.create([
 		{
         teacher_id: 1,
@@ -869,18 +808,3 @@ TeacherHasCourse.create([
         course_id: 3
 		}
         ])
-
-
-© 2018 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-API
-Training
-Shop
-Blog
-About
-Press h to open a hovercard with more details.

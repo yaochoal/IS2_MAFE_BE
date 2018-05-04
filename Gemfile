@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 gem 'prawn'
+gem 'squid', '~> 1.2'
 gem 'wkhtmltopdf-binary'
 gem 'carrierwave-base64'
 gem "carrierwave-mongoid"
