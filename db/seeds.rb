@@ -544,11 +544,6 @@ Career.create([{
     ])
 
 
-
-
-
-
-
 50.times do
     Resource.create([{
         name: Faker::Name.title,
@@ -559,220 +554,511 @@ end
 
 
 
-
-
- 
     Teacher.create([
         {
-        name:'HUGO ALBERTO HERRERA FONSECA',#1
+        name:'HUGO ALBERTO HERRERA FONSECA',#1 ya 1
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'ALFONSO HERRERA JIMENEZ',#2,3
+        name:'ALFONSO HERRERA JIMENEZ',#2,3 ya 2
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'JULIO CESAR CAÑON RODRIGUEZ',#3
+        name:'JULIO CESAR CAÑON RODRIGUEZ',#3 ya 3
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'JAIRO TORRES PARRA',#3
+        name:'JAIRO TORRES PARRA',#3 ya 4
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'FELIX ANTONIO CORTES ALDANA',#3
+        name:'FELIX ANTONIO CORTES ALDANA',#3 ya 5
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'CARLOS HERNAN CAICEDO ESCOBAR',#3,28
+        name:'CARLOS HERNAN CAICEDO ESCOBAR',#3,28 ya 6
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'PEDRO AGUSTIN PEREZ TORRES',#3
+        name:'PEDRO AGUSTIN PEREZ TORRES',#3 ya 7
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'FERNANDO GUZMAN CASTRO',#4,5
+        name:'FERNANDO GUZMAN CASTRO',#4,5 ya 8
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'ISMAEL CASTAÑEDA FUENTES',#7
+        name:'ISMAEL CASTAÑEDA FUENTES',#7 ya 9
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'JUAN CARLOS TORRES PARDO',#7,105
+        name:'JUAN CARLOS TORRES PARDO',#7,105 ya 10
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'JORGE ENRIQUE AMAYA CALA',#8
+        name:'JORGE ENRIQUE AMAYA CALA',#8 ya 11
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'ALEXEI GABRIEL OCHOA DUARTE',#8
+        name:'ALEXEI GABRIEL OCHOA DUARTE',#8 ya 12
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'JOSE DANIEL SALAZAR MORA',#8
+        name:'JOSE DANIEL SALAZAR MORA',#8 ya 13
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'JEAN PIERRE CHARALAMBOS HERNANDEZ',#8,77
+        name:'JEAN PIERRE CHARALAMBOS HERNANDEZ',#8,77 ya 14
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'FABIAN ANDRES GIRALDO GIRALDO',#8
+        name:'FABIAN ANDRES GIRALDO GIRALDO',#8 ya 15
         description: Faker::RickAndMorty.quote,
         },      
         {
-        name:'MICHAEL SILVA CRUZ',#9,18
+        name:'MICHAEL SILVA CRUZ',#9,18 ya 16
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'HECTOR CIFUENTES AYA',#9,21
+        name:'HECTOR CIFUENTES AYA',#9,21 ya 17
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'JUAN SEBASTIAN PARADA PORTILLA',#10
+        name:'JUAN SEBASTIAN PARADA PORTILLA',#10 ya 18
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'FELIPE AUGUSTO DIAZ SUAZA',#10
+        name:'FELIPE AUGUSTO DIAZ SUAZA',#10 ya 19
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'OSCAR FERNANDO CASTELLANOS DOMINGUEZ',#11,21
+        name:'OSCAR FERNANDO CASTELLANOS DOMINGUEZ',#11,21 ya 20
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'WILSON ADARME JAIMES',#12
+        name:'WILSON ADARME JAIMES',#12 ya 21
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'CARLOS JULIO LOZANO PIEDRAHITA',#13
+        name:'CARLOS JULIO LOZANO PIEDRAHITA',#13 ya 22
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'JOSE MARIA PINZON MONTILLA',#15
+        name:'JOSE MARIA PINZON MONTILLA',#15 ya 23
         description: Faker::RickAndMorty.quote,
         
         },
         {
-        name:'JAIR EDUARDO ROCHA GONZALEZ',#16
+        name:'JAIR EDUARDO ROCHA GONZALEZ',#16 ya 24
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'GUSTAVO ALFREDO BULA',#17
+        name:'GUSTAVO ALFREDO BULA',#17 ya 25
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'JUAN DAVID SUAREZ MORENO',#18
+        name:'JUAN DAVID SUAREZ MORENO',#18 ya 26
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'JUAN PABLO ESCAMILLA MEJIA',#19
+        name:'JUAN PABLO ESCAMILLA MEJIA',#19 ya 27
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'CARLOS EDUARDO MORENO MANTILLA',#20
+        name:'CARLOS EDUARDO MORENO MANTILLA',#20 ya 28
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'GERMAN JAIRO HERNANDEZ PEREZ',#22,26
+        name:'GERMAN JAIRO HERNANDEZ PEREZ',#22,26 ya 29
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'FRANCISCO MELUK OROZCO',#23,36
+        name:'FRANCISCO MELUK OROZCO',#23,36  ya 30
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'TITO FLOREZ CALDERON',#24
+        name:'TITO FLOREZ CALDERON',#24 ya 31
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'INGRID PATRICIA PAEZ PARRA',#24
+        name:'INGRID PATRICIA PAEZ PARRA',#24 ya 32
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'CESAR MANUEL LOVERA CABRERA',#25,79,95
+        name:'CESAR MANUEL LOVERA CABRERA',#25,79,95 ya 33
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'CARLOS ANDRES SIERRA VIRGUEZ',#25
+        name:'CARLOS ANDRES SIERRA VIRGUEZ',#25 ya 34
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'ANDRÉS RICARDO ARÉVALO MURILLO',#25
+        name:'ANDRÉS RICARDO ARÉVALO MURILLO',#25 ya 35
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'ANDRES VERA BUITRAGO',#25
+        name:'ANDRES VERA BUITRAGO',#25 ya 36
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'NICOLÁS MÚNERA GARZÓN',#25
+        name:'NICOLÁS MÚNERA GARZÓN',#25 ya 37
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'EDGAR MIGUEL VARGAS CHAPARRO',#26,95
+        name:'EDGAR MIGUEL VARGAS CHAPARRO',#26,95 ya 38
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'SEBASTIAN ALEJANDRO VELASCO DIMATE',#27
+        name:'SEBASTIAN ALEJANDRO VELASCO DIMATE',#27 ya 39
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'JEISSON ANDRÉS VERGARA VARGAS',#29
+        name:'JEISSON ANDRÉS VERGARA VARGAS',#29 ya 40
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'JESUS GUILLERMO TOVAR',#67,79
+        name:'JESUS GUILLERMO TOVAR',#67,79 ya 41
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'OCTAVIO JOSE SALCEDO PARRA',#79
+        name:'OCTAVIO JOSE SALCEDO PARRA',#79 ya 42
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'OSCAR AGUDELO ROJAS',#31
+        name:'OSCAR AGUDELO ROJAS',#31 ya 43
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'CESAR AUGUSTO PEDRAZA BONILLA',#29,31
+        name:'CESAR AUGUSTO PEDRAZA BONILLA',#29,31 ya 44
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'FELIPE RESTREPO CALLE' ,#78,116
+        name:'FELIPE RESTREPO CALLE' ,#78,116 ya 45
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'JOAQUIN FERNANDO SANCHEZ CIFUENTES',#78
+        name:'JOAQUIN FERNANDO SANCHEZ CIFUENTES',#78 ya 46
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'LUIS GERARDO ASTAIZA AMADO',#81,82
+        name:'LUIS GERARDO ASTAIZA AMADO',#81,82 ya 47
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'JUAN CARLOS ALDANA BERNAL',#81,82
+        name:'JUAN CARLOS ALDANA BERNAL',#81,82 ya 48
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'CARLOS OSORIO RAMIREZ',#82
+        name:'CARLOS OSORIO RAMIREZ',#82 ya 49 
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'JORGE ELIECER CAMARGO MENDOZA',#83
+        name:'JORGE ELIECER CAMARGO MENDOZA',#83 ya 50
         description: Faker::RickAndMorty.quote,
         },
         {
-        name:'FABIO AUGUSTO GONZALEZ OSORIO',#38
+        name:'FABIO AUGUSTO GONZALEZ OSORIO',#38 ya 51
         description: Faker::RickAndMorty.quote,
         },
         {
         name:'JONATAN GOMEZ PERDOMO',#46,96
         description: Faker::RickAndMorty.quote,
         }
-        ])
+        ]) 
 
+TeacherHasCourse.create([
+    {
+        course_id: 1,
+        teacher_id: 1
+    },
+    {
+        course_id: 2,
+        teacher_id: 2
+    },
+    {
+        course_id: 3,
+        teacher_id: 2
+    },
+    {
+        course_id: 3,
+        teacher_id: 3
+    },
+    {
+        course_id: 3,
+        teacher_id: 4
+    },
+    {
+        course_id: 3,
+        teacher_id: 5
+    },
+    {
+        course_id: 3,
+        teacher_id: 6
+    },
+    {
+        course_id: 28,
+        teacher_id: 6
+    },
+    {
+        course_id: 3,
+        teacher_id: 7
+    },
+    {
+        course_id: 4,
+        teacher_id: 8
+    },
+    {
+        course_id: 5,
+        teacher_id: 8
+    },
+    {
+        course_id: 7,
+        teacher_id: 9
+    },
+    {
+        course_id: 7,
+        teacher_id: 10
+    },
+    {
+        course_id: 105,
+        teacher_id: 10
+    },
+    {
+        course_id: 8,
+        teacher_id: 11
+    },
+    {
+        course_id: 8,
+        teacher_id: 12
+    },
+    {
+        course_id: 8,
+        teacher_id: 13
+    },
+    {
+        course_id: 8,
+        teacher_id: 14
+    },
+    {
+        course_id: 77,
+        teacher_id: 14
+    },
+    {
+        course_id: 8,
+        teacher_id: 15
+    },
+    {
+        course_id: 9,
+        teacher_id: 16
+    },
+    {
+        course_id: 18,
+        teacher_id: 16
+    },
+    {
+        course_id: 9,
+        teacher_id: 17
+    },
+    {
+        course_id: 21,
+        teacher_id: 17
+    },
+    {
+        course_id: 10,
+        teacher_id: 18
+    },
+    {
+        course_id: 10,
+        teacher_id: 19
+    },
+    {
+        course_id: 11,
+        teacher_id: 20
+    },
+    {
+        course_id: 21,
+        teacher_id: 20
+    },
+    {
+        course_id: 12,
+        teacher_id: 21
+    },
+    {
+        course_id: 13,
+        teacher_id: 22
+    },
+    {
+        course_id: 15,
+        teacher_id: 23
+    },
+    {
+        course_id: 16,
+        teacher_id: 24
+    },
+    {
+        course_id: 17,
+        teacher_id: 25
+    },
+    {
+        course_id: 18,
+        teacher_id: 26
+    },
+    {
+        course_id: 19,
+        teacher_id: 27
+    },
+    {
+        course_id: 20,
+        teacher_id: 28
+    },
+    {
+        course_id: 22,
+        teacher_id: 29
+    },
+    {
+        course_id: 26,
+        teacher_id: 29
+    },
+    {
+        course_id: 23,
+        teacher_id: 30
+    },
+    {
+        course_id: 36,
+        teacher_id: 30
+    },
+    {
+        course_id: 24,
+        teacher_id: 31
+    },
+    {
+        course_id: 24,
+        teacher_id: 32
+    },
+    {
+        course_id: 25,
+        teacher_id: 33
+    },
+    {
+        course_id: 79,
+        teacher_id: 33
+    },
+    {
+        course_id: 95,
+        teacher_id: 33
+    },
+    {
+        course_id: 25,
+        teacher_id: 34
+    },
+    {
+        course_id: 25,
+        teacher_id: 35
+    },
+    {
+        course_id: 25,
+        teacher_id: 36
+    },
+    {
+        course_id: 25,
+        teacher_id: 37
+    },
+    {
+        course_id: 26,
+        teacher_id: 38
+    },
+    {
+        course_id: 95,
+        teacher_id: 38
+    },
+    {
+        course_id: 27,
+        teacher_id: 39
+    },
+    {
+        course_id: 29,
+        teacher_id: 40
+    },
+    {
+        course_id: 67,
+        teacher_id: 41
+    },
+    {
+        course_id: 79,
+        teacher_id: 41
+    },
+    {
+        course_id: 79,
+        teacher_id: 42
+    },
+    {
+        course_id: 31,
+        teacher_id: 43
+    },
+    {
+        course_id: 29,
+        teacher_id: 44
+    },
+    {
+        course_id: 31,
+        teacher_id: 44
+    },
+    {
+        course_id: 78,
+        teacher_id: 45
+    },
+    {
+        course_id: 116,
+        teacher_id: 45
+    },
+    {
+        course_id: 78,
+        teacher_id: 46
+    },
+    {
+        course_id: 81,
+        teacher_id: 47
+    },
+    {
+        course_id: 82,
+        teacher_id: 47
+    },
+    {
+        course_id: 81,
+        teacher_id: 48
+    },
+    {
+        course_id: 82,
+        teacher_id: 48
+    },
+    {
+        course_id: 82,
+        teacher_id: 49
+    },
+    {
+        course_id: 83,
+        teacher_id: 50
+    },
+    {
+        course_id: 38,
+        teacher_id: 51
+    },
+    {
+        course_id: 46,
+        teacher_id: 52
+    },
+    {
+        course_id: 96,
+        teacher_id: 52
+    }
+
+    ])
+
+50.times do
+    TeacherHasResource.create([{
+        teacher_id: rand(1..50),
+        resource_id: rand(1..50)
+    }])
+end
 
 

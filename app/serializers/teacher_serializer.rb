@@ -10,8 +10,13 @@
 #
 
 class TeacherSerializer < ActiveModel::Serializer
-  attributes :id, :name, :description, :likes,:dislikes,:malo,:regular,:medio,:bueno,:excelente
+  attributes :id, :name, :recurso, :description, :likes,:dislikes,:malo,:regular,:medio,:bueno,:excelente
   has_many :commentteachers
+  
+  def recurso
+    Resource.find(object.teacher_has_resources[0].resource_id)
+  end
+  has_many :teacher_has_courses
   def likes
 		object.scoreteachers.where(positive: 4).size+object.scoreteachers.where(positive: 5).size
   end
