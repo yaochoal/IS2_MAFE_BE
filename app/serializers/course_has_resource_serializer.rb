@@ -10,13 +10,18 @@
 #
 
 class CourseHasResourceSerializer < ActiveModel::Serializer
-  attributes :id, :resource_id,:resource_name,:likes
+  attributes :id, :resource_id,:resource_name,:course_name,:likes_course,:resource_name,:likes_course,:likes_resource
 
-  
+  def course_name
+  	Course.find(object.course_id).name
+  end
+  def likes_course
+	 Course.find(object.course_id).scorecourses.where(positive: 4).size+Course.find(object.course_id).scorecourses.where(positive: 5).size
+  end
   def resource_name
   	Resource.find(object.resource_id).name
   end
-  def likes
+  def likes_resource
 	Resource.find(object.resource_id).scoreresources.where(positive: 4).size+Resource.find(object.resource_id).scoreresources.where(positive: 5).size
   end
 end
