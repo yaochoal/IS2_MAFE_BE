@@ -65,6 +65,7 @@
 
 Rails.application.routes.draw do
   resources :contacts
+  resources :best
   resources :scores
   resources :search
   resources :socials

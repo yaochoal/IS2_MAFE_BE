@@ -10,7 +10,7 @@
 #
 
 class CourseHasResourceSerializer < ActiveModel::Serializer
-  attributes :id, :resource_id,:resource_name,:course_name,:likes_course,:resource_name,:likes_course,:likes_resource
+  attributes :id, :resource_id,:resource_name,:course_name,:likes_course,:resource_name,:likes_course,:likes_resource,:course_id
 
   def course_name
   	Course.find(object.course_id).name
