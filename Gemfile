@@ -4,6 +4,8 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
+gem 'whenever', require: false
+chronic (>= 0.6.3)
 gem 'prawn'
 gem 'squid', '~> 1.2'
 gem 'wkhtmltopdf-binary'
