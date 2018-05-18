@@ -18,8 +18,8 @@ class Resource < ApplicationRecord
   has_many :teacher_has_resources
   has_many :teachers, through: :teacher_has_resources
   #asosiacion de recursos a materias
-  has_many :courses_has_resources
-  has_many :courses, through: :courses_has_resources
+  has_many :course_has_resources
+  has_many :courses, through: :course_has_resources
   #asosiacion de recursos a usuario
   belongs_to :user, required: false
   #asosiacion de recurso con comentarios 
