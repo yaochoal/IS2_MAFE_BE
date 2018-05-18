@@ -10,5 +10,12 @@
 #
 
 class TeacherHasCourseSerializer < ActiveModel::Serializer
-  attributes :id, :teacher_id, :course_id
+  attributes :id, :teacher_name,:teacher_description,:teacher_id
+  def teacher_name
+  	Teacher.find(object.teacher_id).name
+  end
+  def teacher_description
+  	Teacher.find(object.teacher_id).description
+  end
+  
 end

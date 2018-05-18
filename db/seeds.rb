@@ -544,15 +544,13 @@ Career.create([{
     ])
 
 
-50.times do
-    Resource.create([{
-        name: Faker::Name.title,
-        link: "http://localhost:3000/uploads/resource/resource/pdf-sample.pdf",
-        description: Faker::RickAndMorty.quote
-    }])
-end
-
-
+    50.times do
+       Resource.create([{
+         name: Faker::Name.title,
+         link: "http://localhost:3000/uploads/resource/resource/pdf-sample.pdf",
+         description: Faker::RickAndMorty.quote
+        }])
+    end
 
     Teacher.create([
         {
@@ -1060,5 +1058,13 @@ TeacherHasCourse.create([
         resource_id: rand(1..50)
     }])
 end
+
+50.times do
+    CourseHasResource.create([{
+        course_id: rand(1..50),
+        resource_id: rand(1..50)
+    }])
+end
+
 
 

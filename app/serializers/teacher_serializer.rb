@@ -16,7 +16,7 @@ class TeacherSerializer < ActiveModel::Serializer
   #def recurso
   #  Resource.find(object.teacher_has_resources[0].resource_id)
   #end
-  #has_many :teacher_has_courses
+  has_many :teacher_has_courses
   def likes
 		object.scoreteachers.where(positive: 4).size+object.scoreteachers.where(positive: 5).size
   end

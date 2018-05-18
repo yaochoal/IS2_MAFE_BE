@@ -17,7 +17,7 @@ class Course < ApplicationRecord
   has_many :teacher_has_courses
   has_many :teachers, through: :teacher_has_courses
   #asosiacion de recursos a materias
-  has_many :courses_has_resources
+  has_many :course_has_resources
   has_many :resources, through: :courses_has_resources
   #asosiacion de curso con comentarios 
   has_many :commentcourses
