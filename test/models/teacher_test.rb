@@ -5,6 +5,8 @@
 #  id          :integer          not null, primary key
 #  name        :string
 #  description :string
+#  likes       :integer
+#  dislikes    :integer
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
 #

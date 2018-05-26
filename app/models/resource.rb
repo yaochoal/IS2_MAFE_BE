@@ -5,6 +5,8 @@
 #  id               :integer          not null, primary key
 #  name             :string
 #  link             :string
+#  likes            :integer
+#  dislikes         :integer
 #  user_id          :integer
 #  scoreresource_id :integer
 #  description      :string

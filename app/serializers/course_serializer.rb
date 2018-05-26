@@ -2,15 +2,18 @@
 #
 # Table name: courses
 #
-#  id         :integer          not null, primary key
-#  name       :string
-#  code       :integer
-#  created_at :datetime         not null
-#  updated_at :datetime         not null
+#  id          :integer          not null, primary key
+#  name        :string
+#  description :string
+#  code        :integer
+#  likes       :integer
+#  dislikes    :integer
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
 #
 
 class CourseSerializer < ActiveModel::Serializer
-  attributes :id , :name ,:code,:likes,:dislikes,:malo,:regular,:medio,:bueno,:excelente
+  attributes :id , :name ,:description,:code,:likes,:dislikes,:malo,:regular,:medio,:bueno,:excelente
   has_many :commentcourses
 
   has_many :teacher_has_courses
