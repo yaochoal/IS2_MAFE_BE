@@ -16,7 +16,7 @@
 #
 
 class ResourceSerializer < ActiveModel::Serializer
-  attributes :id ,:name ,:link , :description, :resource, :user_id,:likes,:dislikes,:malo,:regular,:medio,:bueno,:excelente,:course_has_resources,:teacher_has_resources
+  attributes :id ,:name ,:link ,:created_at, :description, :resource, :user_id,:likes,:dislikes,:malo,:regular,:medio,:bueno,:excelente,:course_has_resources,:teacher_has_resources
   has_many :commentresources
 
   has_many :course_has_resources
