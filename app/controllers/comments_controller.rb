@@ -7,11 +7,24 @@ class CommentsController < ApplicationController
 
   # GET /comments/1
   def show
-  
+      
   end
 
   # POST /comments
   def create
+   # require "google/cloud/language"
+    # Imports the Google Cloud client library
+    # Instantiates a client
+    #language = Google::Cloud::Language.new 
+    #The text to analyze
+    #text = params[:comment]
+    # Detects the sentiment of the text
+   # response = language.analyze_sentiment content: text, type: :PLAIN_TEXT
+    # Get document sentiment from response
+   # sentiment = response.document_sentiment
+   # puts "Text: #{text}"
+   # puts "Score: #{sentiment.score}, #{sentiment.magnitude}"
+
     if params[:course_id]
       @comment = Commentcourse.create(user_id: params[:user_id],course_id: params[:course_id],comment: params[:comment])
       if @comment.save
