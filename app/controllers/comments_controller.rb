@@ -12,6 +12,14 @@ class CommentsController < ApplicationController
 
   # POST /comments
   def create
+    #require "google/cloud/language"
+    
+    #language_service_client = Google::Cloud::Language.new
+    #content = params[:comment]
+    #type = :PLAIN_TEXT
+    #document = { content: content, type: type }
+    #response = language_service_client.analyze_sentiment(document)
+    
     if params[:course_id]
       @comment = Commentcourse.create(user_id: params[:user_id],course_id: params[:course_id],comment: params[:comment])
       if @comment.save

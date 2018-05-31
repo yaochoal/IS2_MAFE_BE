@@ -5,6 +5,8 @@
 #  id               :integer          not null, primary key
 #  name             :string
 #  link             :string
+#  likes            :integer
+#  dislikes         :integer
 #  user_id          :integer
 #  scoreresource_id :integer
 #  description      :string
@@ -14,13 +16,13 @@
 #
 
 class ResourceSerializer < ActiveModel::Serializer
-  attributes :id ,:name ,:link , :description, :resource, :user_id,:likes,:dislikes,:malo,:regular,:medio,:bueno,:excelente,:course_has_resources,:teacher_has_resources
+  attributes :id ,:name ,:link ,:created_at, :description, :resource, :user_id,:likes,:dislikes,:malo,:regular,:medio,:bueno,:excelente,:course_has_resources,:teacher_has_resources
   has_many :commentresources
 
   has_many :course_has_resources
   has_many :teacher_has_resources
 
- 
+
   def likes
 		object.scoreresources.where(positive: 4).size+object.scoreresources.where(positive: 5).size
   end

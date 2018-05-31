@@ -5,6 +5,8 @@
 #  id               :integer          not null, primary key
 #  name             :string
 #  link             :string
+#  likes            :integer
+#  dislikes         :integer
 #  user_id          :integer
 #  scoreresource_id :integer
 #  description      :string
@@ -27,6 +29,6 @@ class Resource < ApplicationRecord
   #asosiacion de recurso con sus calificaciones
   has_many :scoreresources
   mount_base64_uploader :resource, PdfsUploader
- 
-  scope :search, ->(params){where("name LIKE ?",params)}
+  #scope :search, ->(params){where("name LIKE ?",params)}
+  scope :search, ->(params,params1){where("name LIKE ? AND likes >= ?",params,params1)}
 end
