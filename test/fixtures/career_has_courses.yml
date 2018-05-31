@@ -1,0 +1,20 @@
+# == Schema Information
+#
+# Table name: career_has_courses
+#
+#  id         :integer          not null, primary key
+#  career_id  :integer
+#  course_id  :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  career: one
+  course: one
+
+two:
+  career: two
+  course: two
