@@ -1218,7 +1218,7 @@ Career.create([{
         name:'JONATAN GOMEZ PERDOMO',#46,96
         description: Faker::RickAndMorty.quote,
         likes: 0,
-        dislikes: 0x    
+        dislikes: 0 
         }
         ]) 
 

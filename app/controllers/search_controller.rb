@@ -4,12 +4,14 @@ class SearchController < ApplicationController
   def create
     if params[:teacher_name]
     	palabra = params[:teacher_name]
-    	@search = Teacher.search("%#{palabra}%")
+        likes = params[:likes]
+    	@search = Teacher.search("%#{palabra}%",likes)
     	render json: @search
     end
     if params[:course_name]
     	palabra = params[:course_name]
-    	@search = Course.search("%#{palabra}%")
+        likes = params[:likes]
+    	@search = Course.search("%#{palabra}%",likes)
     	render json: @search
     end
     if params[:resource_name]

@@ -14,4 +14,5 @@
 class Scoreresource < ApplicationRecord
 	belongs_to :user, required: false
 	belongs_to :resource, required: false
+	scope :exist, ->(params,params1){where("user_id = ? AND resource_id = ?",params,params1)}
 end

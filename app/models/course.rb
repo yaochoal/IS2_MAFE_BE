@@ -42,5 +42,5 @@ class Course < ApplicationRecord
   def self.get_allcareers
    		self.joins(:careers).select('courses.id ,courses.name as course_name,careers.id as teacher_id, careers.name as career_name')
   end
-  scope :search, ->(params){where("name LIKE ?",params)}
+  scope :search, ->(params,params1){where("name LIKE ? AND likes >= ?",params,params1)}
 end

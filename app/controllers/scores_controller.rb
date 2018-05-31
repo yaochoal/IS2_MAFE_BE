@@ -2,7 +2,7 @@ class ScoresController < ApplicationController
 
 	def create
     
-		if params[:course_id] && (Scorecourse.where(user_id:params[:user_id],course_id:params[:course_id])[0] == nil)
+		if params[:course_id] && (Scorecourse.exist(params[:user_id],params[:course_id])[0] == nil)
       		@score = Scorecourse.create(user_id: params[:user_id],course_id: params[:course_id],positive:params[:positive],negative:params[:negative])
           course = Course.find(params[:course_id])
           course.likes = course.scorecourses.where(positive: 4).size+course.scorecourses.where(positive: 5).size
@@ -17,7 +17,7 @@ class ScoresController < ApplicationController
         render json: "", status: :not_modified
     end
 
-   		if params[:teacher_id] && (Scoreteacher.where(user_id:params[:user_id],teacher_id:params[:teacher_id])[0] == nil)
+   		if params[:teacher_id] && (Scoreteacher.exist(params[:user_id],params[:teacher_id])[0] == nil)
      		@score = Scoreteacher.create(user_id: params[:user_id],teacher_id: params[:teacher_id],positive:params[:positive],negative:params[:negative])
         teacher = Teacher.find(params[:teacher_id])
          teacher.likes = teacher.scoreteachers.where(positive: 4).size+teacher.scoreteachers.where(positive: 5).size
@@ -32,7 +32,7 @@ class ScoresController < ApplicationController
          render json: "", status: :not_modified
     	end
 
-   	  if params[:resource_id] && (Scoreresource.where(user_id:params[:user_id],resource_id:params[:resource_id])[0] == nil)
+   	  if params[:resource_id] && (Scoreresource.exist(params[:user_id],params[:resource_id])[0] == nil)
       		@score = Scoreresource.create(user_id: params[:user_id],resource_id: params[:resource_id],positive: params[:positive],negative:params[:negative])
           resource = Resource.find(params[:resource_id])
           resource.likes = resource.scoreresources.where(positive: 4).size+resource.scoreresources.where(positive: 5).size
@@ -46,7 +46,7 @@ class ScoresController < ApplicationController
       elsif params[:resource_id]
         render json: "", status: :not_modified
     	end
-    	if params[:commentcourse_id] && (Scorecommentcourse.where(user_id:params[:user_id],commentcourse_id:params[:commentcourse_id])[0] == nil)
+    	if params[:commentcourse_id] && (Scorecommentcourse.exist(params[:user_id],params[:commentcourse_id])[0] == nil)
       		@score = Scorecommentcourse.create(user_id: params[:user_id],commentcourse_id: params[:commentcourse_id],positive:params[:positive],negative:params[:negative])
       		if @score.save
       			render json: @score, status: :created
@@ -57,7 +57,7 @@ class ScoresController < ApplicationController
         render json: "", status: :not_modified
     	end
 
-   		if params[:commentteacher_id] && (Scorecommentteacher.where(user_id:params[:user_id],commentteacher_id:params[:commentteacher_id])[0] == nil)
+   		if params[:commentteacher_id] && (Scorecommentteacher.exist(params[:user_id],params[:commentteacher_id])[0] == nil)
    			
      		@score = Scorecommentteacher.create(user_id: params[:user_id],commentteacher_id: params[:commentteacher_id],positive:params[:positive],negative:params[:negative])
       		if @score.save
@@ -70,11 +70,12 @@ class ScoresController < ApplicationController
         render json: "", status: :not_modified
     	end
 
-   	  if params[:commentresource_id] && (Scorecommentresource.where(user_id:params[:user_id],commentresource_id:params[:commentresource_id])[0] == nil)
+   	  if params[:commentresource_id] && (Scorecommentresource.exist(params[:user_id],params[:commentresource_id])[0] == nil)
    	    	
       		@score = Scorecommentresource.create(user_id: params[:user_id],commentresource_id: params[:commentresource_id],positive: params[:positive],negative:params[:negative])
       		if @score.save
-      			render json: @score, status: :created
+            @comment = Commentresource.find(params[:commentresource_id])
+      			render json: @comment, status: :created
       		else
      			render json: @score.errors, status: :unprocessable_entity
      	    end

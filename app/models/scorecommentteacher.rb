@@ -14,4 +14,5 @@
 class Scorecommentteacher < ApplicationRecord
 	belongs_to :user, required: false
 	belongs_to :commentteacher, required: false
+	scope :exist, ->(params,params1){where("user_id = ? AND commentteacher_id = ?",params,params1)}
 end
