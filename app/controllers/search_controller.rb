@@ -14,7 +14,8 @@ class SearchController < ApplicationController
     end
     if params[:resource_name]
     	palabra = params[:resource_name]
-    	@search = Resource.search("%#{palabra}%")
+        likes = params[:likes]
+    	@search = Resource.search("%#{palabra}%",likes)
     	render json: @search
     end
   end

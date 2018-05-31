@@ -1,7 +1,8 @@
 class ScoresController < ApplicationController
 
 	def create
-		if params[:course_id]
+    
+		if params[:course_id] && (Scorecourse.where(user_id:params[:user_id],course_id:params[:course_id])[0] == nil)
       		@score = Scorecourse.create(user_id: params[:user_id],course_id: params[:course_id],positive:params[:positive],negative:params[:negative])
           course = Course.find(params[:course_id])
           course.likes = course.scorecourses.where(positive: 4).size+course.scorecourses.where(positive: 5).size
@@ -12,9 +13,11 @@ class ScoresController < ApplicationController
       		else
       			render json: @score.errors, status: :unprocessable_entity
       		end
-    	end
+    elsif params[:course_id]
+        render json: "", status: :not_modified
+    end
 
-   		if params[:teacher_id]
+   		if params[:teacher_id] && (Scoreteacher.where(user_id:params[:user_id],teacher_id:params[:teacher_id])[0] == nil)
      		@score = Scoreteacher.create(user_id: params[:user_id],teacher_id: params[:teacher_id],positive:params[:positive],negative:params[:negative])
         teacher = Teacher.find(params[:teacher_id])
          teacher.likes = teacher.scoreteachers.where(positive: 4).size+teacher.scoreteachers.where(positive: 5).size
@@ -25,9 +28,11 @@ class ScoresController < ApplicationController
       		else
       			render json: @score.errors, status: :unprocessable_entity
       		end
+      elsif params[:teacher_id]
+         render json: "", status: :not_modified
     	end
 
-   	    if params[:resource_id]
+   	  if params[:resource_id] && (Scoreresource.where(user_id:params[:user_id],resource_id:params[:resource_id])[0] == nil)
       		@score = Scoreresource.create(user_id: params[:user_id],resource_id: params[:resource_id],positive: params[:positive],negative:params[:negative])
           resource = Resource.find(params[:resource_id])
           resource.likes = resource.scoreresources.where(positive: 4).size+resource.scoreresources.where(positive: 5).size
@@ -38,17 +43,21 @@ class ScoresController < ApplicationController
       		else
      			render json: @score.errors, status: :unprocessable_entity
      	    end
+      elsif params[:resource_id]
+        render json: "", status: :not_modified
     	end
-    	if params[:commentcourse_id]
+    	if params[:commentcourse_id] && (Scorecommentcourse.where(user_id:params[:user_id],commentcourse_id:params[:commentcourse_id])[0] == nil)
       		@score = Scorecommentcourse.create(user_id: params[:user_id],commentcourse_id: params[:commentcourse_id],positive:params[:positive],negative:params[:negative])
       		if @score.save
       			render json: @score, status: :created
       		else
       			render json: @score.errors, status: :unprocessable_entity
       		end
+      elsif params[:commentcourse_id]
+        render json: "", status: :not_modified
     	end
 
-   		if params[:commentteacher_id]
+   		if params[:commentteacher_id] && (Scorecommentteacher.where(user_id:params[:user_id],commentteacher_id:params[:commentteacher_id])[0] == nil)
    			
      		@score = Scorecommentteacher.create(user_id: params[:user_id],commentteacher_id: params[:commentteacher_id],positive:params[:positive],negative:params[:negative])
       		if @score.save
@@ -56,9 +65,12 @@ class ScoresController < ApplicationController
       		else
       			render json: @score.errors, status: :unprocessable_entity
       		end
+      elsif params[:commentteacher_id]
+
+        render json: "", status: :not_modified
     	end
 
-   	    if params[:commentresource_id]
+   	  if params[:commentresource_id] && (Scorecommentresource.where(user_id:params[:user_id],commentresource_id:params[:commentresource_id])[0] == nil)
    	    	
       		@score = Scorecommentresource.create(user_id: params[:user_id],commentresource_id: params[:commentresource_id],positive: params[:positive],negative:params[:negative])
       		if @score.save
@@ -66,6 +78,8 @@ class ScoresController < ApplicationController
       		else
      			render json: @score.errors, status: :unprocessable_entity
      	    end
+      elsif params[:commentresource_id]
+        render json: "", status: :not_modified
     	end
 	end
 
