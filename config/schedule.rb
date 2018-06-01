@@ -22,3 +22,7 @@
 every :day, at: '2:00 am' do
 	runner "CommentcleanerJob.perform_later"
 end
+
+every :day, at: '2:00 am' do
+	runner "SentimentCommentJob.perform_later"
+end

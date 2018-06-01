@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 20180427225453) do
     t.integer "user_id"
     t.integer "course_id"
     t.string "comment"
+    t.integer "sentiment"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -40,6 +41,7 @@ ActiveRecord::Schema.define(version: 20180427225453) do
     t.integer "user_id"
     t.integer "resource_id"
     t.string "comment"
+    t.integer "sentiment"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -48,6 +50,7 @@ ActiveRecord::Schema.define(version: 20180427225453) do
     t.integer "user_id"
     t.integer "teacher_id"
     t.string "comment"
+    t.integer "sentiment"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
